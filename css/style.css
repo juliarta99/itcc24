@@ -118,18 +118,40 @@ nav > div:last-child{
 }
 .landing-image .content-img{
     position: relative;
-    border-radius: 100%;
+    border-radius: 1rem;
     background-color: var(--primary);
     width: 300px;
     height: 300px;
+    transition: all .5s;
+    box-shadow: 0 4px 100px -1px rgba(129, 76, 245, 1);
 }
+.landing-image .content-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; 
+    height: 300px;
+    background-color: rgba(129, 76, 245, 0.3);
+    border-radius: 1rem;
+    z-index: -1;
+    transition: all .5s;
+}
+.landing .content-img:hover{
+    transform: translate(5px, -5px);
+    box-shadow: none;
+}
+.landing .content-img:hover::before{
+    transform: translate(-20px, 20px);
+    box-shadow: 0 10px 100px -1px rgba(129, 76, 245, .5);
+}
+
 .landing-image .content-img img{
-    width: 140%;
+    width: 150%;
     object-fit: contain;
     position: absolute;
     bottom: 0;
     left: 50%;
-    border-radius: 0 0 100% 100%;
     transform: translateX(-50%);
 }
 
@@ -164,11 +186,73 @@ nav > div:last-child{
     padding: 15px;
     margin: 0;
 }
-
 .accordion-header:hover {
     background-color: var(--primary);
     color: var(--white);
 }
+.card-bubble-wrapper{
+    position: relative;
+}
+.card-bubble{
+    position: relative;
+    overflow: hidden;
+    border-radius: .7rem;
+    transition: all 1s ease;
+}
+.card-bubble .content{
+    padding: 2rem;
+}
+.icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    padding: .5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    transition-delay: .5s;
+    transition: all 1s ease;
+}
+.card-bubble:hover + .icon{
+    background-color: var(--white);
+    color: var(--primary);
+}
+.card-bubble .bubble{
+    width: 70%;
+    /* aspect-ratio: 1/1; */
+    height: 70%;
+    background-color: rgba(129, 76, 245, .5);
+    border-radius: 100%;
+    z-index: -1;
+    bottom: 0;
+    position: absolute;
+    transition: all 1s ease;
+}
+.bubble.bubble-1{
+    transform: translate(-40%, 40%);
+}
+.bubble.bubble-2{
+    transform: translate(-60%, 20%);
+}
+.card-bubble:hover .bubble{
+    width: 150%;
+    height: 150%;
+    border-radius: 0;
+    transform: translate(0, 0);
+    background-color: var(--primary);
+}
+.card-bubble:hover{
+    color: var(--white);
+}
+
 .img-learning-toggle{
     position: absolute;
     top: 0;
@@ -181,23 +265,77 @@ nav > div:last-child{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 .overlay-card-learning{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
+    height: 100%;
+    transform: translateY(220px);
     z-index: 2;
+    transition: all .5s ease;
+}
+.overlay-card-learning:hover .icon{
+    opacity: 0;
+}
+.card-learning:hover .overlay-card-learning{
+    transform: translateY(0);
 }
 .content-card-learning{
     position: relative;
     z-index: 3;
-    padding: 10px;
+    height: 350px;
+    max-height: 350px;
 }
-
 .title-learning{
     padding: 12rem 0 10rem 0 !important;
     overflow: hidden;
+}
+
+.testimonials-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimoni{
+    max-width: 800px;
+}
+.profil-testimoni{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+.profil-testimoni img{
+    max-width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card-price .discount{
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background-color: var(--highlight);
+    color: white;
+    width: max-content;
+    margin: auto;
+}
+.before-price{
+    font-size: x-large;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.learnings{
+    position: relative;
+    top: -150px;
 }

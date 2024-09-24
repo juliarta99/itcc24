@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="lib/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="lib/swiperjs/swiper-bundle.min.css">
 </head>
 <body>
-    <header id="navbar" class="shadow-md">
+    <header id="navbar" class="shadow-md glassmorphism">
         <nav>
             <div class="logo flex gap-05">
                 <a href="index.html" class="text-primary">
@@ -34,64 +36,316 @@
             </div>
         </nav>
         <hr>
-        <div class="slider-menu-wrapper">
-            <ul>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-                <li class="nav-link">
-                    <a href="">Android Developer</a>
-                </li>
-            </ul>
+        <div class="container-swiper-menu-learnings">
+            <div class="swiper swiper-menu-learning">
+                <div class="swiper-wrapper p-05">
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="navlink">
+                        Android Developer
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <a href="" class="all">
+                Semua Kelas
+            </a>
         </div>
+        <!-- <div class="slider-menu-wrapper">
+            <ul>
+                
+            </ul>
+        </div> -->
     </header>
-    <div class="container title-learning bg">
+    <div class="container title-learning bg-gradient">
         <h2 class="text-center">Android Developer</h2>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, enim!</p>
         <div class="circle-b-absolute"></div>
         <div class="circle-b-absolute circle-b-1"></div>
     </div>
+    <div class="container learnings">
+        <div class="grid-cols-4">
+            <a href="" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning shadow-md">
+                        <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                    <div class="flex align-center gap-05 mt-1">
+                                        <i class='bx bxs-star text-highlight'></i>
+                                        <p class="text-xs">4,80</p>
+                                    </div>
+                                    <div class="flex align-center gap-05">
+                                        <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                        <p class="text-xs">Level Dasar</p>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning shadow-md">
+                        <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                    <div class="flex align-center gap-05 mt-1">
+                                        <i class='bx bxs-star text-highlight'></i>
+                                        <p class="text-xs">4,80</p>
+                                    </div>
+                                    <div class="flex align-center gap-05">
+                                        <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                        <p class="text-xs">Level Dasar</p>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning shadow-md">
+                        <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                    <div class="flex align-center gap-05 mt-1">
+                                        <i class='bx bxs-star text-highlight'></i>
+                                        <p class="text-xs">4,80</p>
+                                    </div>
+                                    <div class="flex align-center gap-05">
+                                        <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                        <p class="text-xs">Level Dasar</p>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning shadow-md">
+                        <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                    <div class="flex align-center gap-05 mt-1">
+                                        <i class='bx bxs-star text-highlight'></i>
+                                        <p class="text-xs">4,80</p>
+                                    </div>
+                                    <div class="flex align-center gap-05">
+                                        <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                        <p class="text-xs">Level Dasar</p>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning shadow-md">
+                        <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                    <div class="flex align-center gap-05 mt-1">
+                                        <i class='bx bxs-star text-highlight'></i>
+                                        <p class="text-xs">4,80</p>
+                                    </div>
+                                    <div class="flex align-center gap-05">
+                                        <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                        <p class="text-xs">Level Dasar</p>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="flex flex-column align-center mt-15">
+            <h2>Mulailah Langkahmu untuk menjadi Android Developer</h2>
+            <button class="btn btn-primary">Mulai Belajar</button>
+        </div>
+    </div>
+    <div class="bg-black text-white border-tl overflow-hidden p-3">
+        <div class="text-center mt-1">
+            <h4 class="text-primary">Lorem ipsum dolor sit amet.</h4>
+            <h1>Testimoni</h1>
+        </div>
+        <div class="testimonials-wrapper">
+            <div class="swiper swiper-menu-testimoni">
+                <div class="bg-lr-absolute-black"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex justify-center">
+                            <div class="testimoni">
+                                <div class="card-testimoni glassmorphism">
+                                    <div class="profil-testimoni">
+                                        <img src="assets/kenapa-1.png" alt="">
+                                        <h4>John Doe</h4>
+                                    </div>
+                                    <div class="content-testimoni">
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ipsum reprehenderit magni debitis perferendis vero accusamus consequatur qui atque a, ratione repellat voluptatibus nam animi maxime soluta? Minus suscipit tempora dolores deleniti laboriosam repudiandae commodi eveniet labore deserunt, molestias hic, ullam excepturi voluptatem, dolore voluptatum! Provident nulla dolorem at nobis.</p>
+                                        <div class="flex gap-05 align-center mt-1">
+                                            <i class='bx bxs-briefcase'></i>
+                                            <p>Back-End Developer</p>
+                                        </div>
+                                        <h5>PT. Cahaya Abadi</h5>
+                                        <p>Lulusan Back-End Developer Path</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex justify-center">
+                            <div class="testimoni">
+                                <div class="card-testimoni glassmorphism">
+                                    <div class="profil-testimoni">
+                                        <img src="assets/kenapa-1.png" alt="">
+                                        <h4>John Doe</h4>
+                                    </div>
+                                    <div class="content-testimoni">
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ipsum reprehenderit magni debitis perferendis vero accusamus consequatur qui atque a, ratione repellat voluptatibus nam animi maxime soluta? Minus suscipit tempora dolores deleniti laboriosam repudiandae commodi eveniet labore deserunt, molestias hic, ullam excepturi voluptatem, dolore voluptatum! Provident nulla dolorem at nobis.</p>
+                                        <div class="flex gap-05 align-center mt-1">
+                                            <i class='bx bxs-briefcase'></i>
+                                            <p>Back-End Developer</p>
+                                        </div>
+                                        <h5>PT. Cahaya Abadi</h5>
+                                        <p>Lulusan Back-End Developer Path</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="lib/swiperjs/swiper-bundle.min.js"></script>
+<script src="lib/jquery/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
 </html>
