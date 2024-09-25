@@ -339,3 +339,51 @@ nav > div:last-child{
     position: relative;
     top: -150px;
 }
+.img-review-in-detail{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+.img-review-in-detail:nth-child(2){
+    left: -15px;
+}
+.img-review-in-detail:nth-child(3){
+    left: -30px;
+}
+.detail-icon-course{
+    width: 100% !important;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 100px -1px rgba(129, 76, 245, .5);
+}
+.detail-course-wrapper{
+    position: relative;
+    top: -85px;
+}
+.silabus-wrapper .card:first-child{
+    border-radius: 0 1rem 0 0 !important;
+}
+.silabus-wrapper .card:last-child{
+    border-radius: 0 0 1rem 1rem !important;
+}
+.number-silabus{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    padding: .5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    transition-delay: .5s;
+    transition: all 1s ease;
+}

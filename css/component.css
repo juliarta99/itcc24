@@ -94,6 +94,9 @@
 .text-white{
     color: var(--white);
 }
+.text-black{
+    color: var(--black);
+}
 .text-highlight{
     color: var(--highlight);
 }
@@ -103,7 +106,15 @@
     text-align: center;
 }
 
+/* object fit */
+.object-fit-cover{
+    object-fit: cover;
+}
+
 /* border radius */
+.border-0{
+    border-radius: 0 !important;
+}
 .border-sm{
     border-radius: .5rem;
 }
@@ -148,6 +159,9 @@
 }
 .pt-3{
     padding-top: 3rem !important;
+}
+.pb-6{
+    padding-bottom: 6rem !important;
 }
 .pb-13{
     padding-bottom: 13rem !important;
