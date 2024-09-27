@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../lib/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="../lib/swiperjs/swiper-bundle.min.css">
+</head>
+<body>
+    <header id="navbar" class="shadow-md bg-white">
+        <nav>
+            <div class="logo flex gap-05">
+                <a href="index.html" class="text-primary">
+                    <h1>Tech Grow</h1>
+                </a>
+            </div>
+            <div class="wrapper-nav-link">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="academy.html" class="nav-link">Academy</a>
+                <a href="challange.html" class="nav-link">Challange</a>
+                <a href="event.html" class="nav-link">Event</a>
+                <a href="mentoring.html" class="nav-link">Mentoring</a>
+                <a href="jobs.html" class="nav-link">Job</a>
+            </div>
+            <div class="account-nav-link">
+                <a href="login.html">
+                    <button class="btn btn-white">Masuk</button>
+                </a>
+                <a href="register.html">
+                    <button class="btn btn-primary">Daftar</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="grid-cols-2-max">
+        <section id="side-bar" class="pt-5 bg-white overflow-hidden shadow-md">
+            <div class="position-relative p-3 overflow-hidden">
+                <h1 class="text-center z-1">Mentoring</h1>
+                <div class="circle-b-absolute circle-side-bar"></div>
+                <div class="circle-b-absolute circle-side-bar-1"></div>
+            </div>
+            <div class="flex flex-column z-1">
+                <div data-target="#content-dashboard-1" class="cursor-pointer flex gap-1 align-center side-bar-link active">
+                    <i class='bx bx-notepad'></i>
+                    <p>Semua Mentor</p>
+                </div>
+                <div data-target="#content-dashboard-2" class="cursor-pointer flex gap-1 align-center side-bar-link">
+                    <i class='bx bx-file' ></i>
+                    <p>Riwayat Mentoring</p>
+                </div>
+            </div>
+        </section>
+        <div id="content-dashboard-1">
+            <div class="container pt-nav bg-gradient min-h-100">
+                <h2>Cari Mentor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, omnis.</p>
+                <input type="text" class="input w-full mt-1" placeholder="Cari mentor">
+                <div class="grid-cols-3 mt-15 gap-1">
+                    <div class="card w-full p-0 border-sm overflow-hidden">
+                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                        <div class="p-1">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <div class="flex flex-column gap-05 mt-1">
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-buildings'></i>
+                                    <p class="text-sm">Pt Sejahtera Makmur</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-code-alt'></i>
+                                    <p class="text-sm">Back End Developer</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-timer' ></i>
+                                    <p class="text-sm">5 Tahun pengalaman</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-column gap-05 justify-center mt-1">
+                                <button class="btn btn-white">About</button>
+                                <button class="btn btn-primary">Booking Mentor</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full p-0 border-sm overflow-hidden">
+                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                        <div class="p-1">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <div class="flex flex-column gap-05 mt-1">
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-buildings'></i>
+                                    <p class="text-sm">Pt Sejahtera Makmur</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-code-alt'></i>
+                                    <p class="text-sm">Back End Developer</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-timer' ></i>
+                                    <p class="text-sm">5 Tahun pengalaman</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-column gap-05 justify-center mt-1">
+                                <button class="btn btn-white">About</button>
+                                <button class="btn btn-primary">Booking Mentor</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full p-0 border-sm overflow-hidden">
+                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                        <div class="p-1">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <div class="flex flex-column gap-05 mt-1">
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-buildings'></i>
+                                    <p class="text-sm">Pt Sejahtera Makmur</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-code-alt'></i>
+                                    <p class="text-sm">Back End Developer</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-timer' ></i>
+                                    <p class="text-sm">5 Tahun pengalaman</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-column gap-05 justify-center mt-1">
+                                <button class="btn btn-white">About</button>
+                                <button class="btn btn-primary">Booking Mentor</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-dashboard-2" class="hidden">
+            <div class="container pt-nav bg-gradient min-h-100">
+                <h2>Mentoring Anda</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, omnis.</p>
+                <input type="text" class="input w-full mt-1" placeholder="Cari mentoring">
+                <div class="grid-cols-3 mt-15 gap-1">
+                    <div class="card w-full p-0 border-sm overflow-hidden">
+                        <div class="p-1 bg-highlight text-white">
+                            <p>3 hari lagi</p>
+                        </div>
+                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                        <div class="p-1">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <div class="flex flex-column gap-05 mt-1">
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-time'></i>
+                                    <p class="text-sm">29 September 2024, 13:00</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-timer'></i>
+                                    <p class="text-sm">2 jam</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-column gap-05 justify-center mt-1">
+                                <button class="btn btn-white">About Mentor</button>
+                                <button class="btn btn-primary">Link Mentoring</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full p-0 border-sm overflow-hidden">
+                        <div class="p-1 bg-highlight text-white">
+                            <p>3 hari lagi</p>
+                        </div>
+                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                        <div class="p-1">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <div class="flex flex-column gap-05 mt-1">
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-time'></i>
+                                    <p class="text-sm">29 September 2024, 13:00</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-timer'></i>
+                                    <p class="text-sm">2 jam</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-column gap-05 justify-center mt-1">
+                                <button class="btn btn-white">About Mentor</button>
+                                <button class="btn btn-primary">Link Mentoring</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full p-0 border-sm overflow-hidden">
+                        <div class="p-1 bg-primary text-white">
+                            <p>Selesai</p>
+                        </div>
+                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                        <div class="p-1">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <div class="flex flex-column gap-05 mt-1">
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-time'></i>
+                                    <p class="text-sm">29 September 2024, 13:00</p>
+                                </div>
+                                <div class="flex gap-05 align-center">
+                                    <i class='bx text-lg bx-timer'></i>
+                                    <p class="text-sm">2 jam</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-column gap-05 justify-center mt-1">
+                                <button class="btn btn-white">About Mentor</button>
+                                <button class="btn btn-primary">Booking Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/swiperjs/swiper-bundle.min.js"></script>
+<script src="../lib/jquery/jquery-3.7.1.min.js"></script>
+<script src="../js/script.js"></script>
+</html>
