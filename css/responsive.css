@@ -5,6 +5,9 @@
     .grid-cols-4{
         grid-template-columns: 1fr 1fr !important;
     }
+    .card-bubble-wrapper{
+        margin-top: 1rem;
+    }
 }
 @media (max-width: 960px) {
     nav{
@@ -44,6 +47,9 @@
     }
 }
 @media (max-width: 640px) {
+    .landing{
+        margin-bottom: 3rem;
+    }
     .container{
         padding: 1rem 1.5rem;
     }
@@ -79,7 +85,7 @@
         font-size: 12px !important;
     }
     .btn{
-        padding: .5rem 1.5rem;
+        padding: .6rem 1.5rem;
     }
     .cols-3{
         -moz-column-count: 2;

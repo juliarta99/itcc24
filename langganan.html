@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="lib/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="lib/swiperjs/swiper-bundle.min.css">
 </head>
@@ -17,25 +18,68 @@
         <nav>
             <div class="logo flex gap-05">
                 <a href="index.html" class="text-primary">
-                    <h1>Tech Grow</h1>
+                    <h1>TECH</h1>
                 </a>
-                <input type="text" class="input" placeholder="Apa yang ingin anda pelajari?">
+                <div class="flex" id="search-nav">
+                    <input type="text" class="input input-search bg-transparent" id="search-top" placeholder="Apa yang ingin anda pelajari?">
+                    <button class="btn btn-primary btn-search w-max">
+                        <i class='bx text-lg bx-search'></i>
+                    </button>
+                </div>
             </div>
-            <div class="wrapper-nav-link" id="wrapper-nav-link">
-                <a href="learning-path.html" data-white="1" class="nav-link text-white">Learning Path</a>
-                <a href="langganan.html" data-white="1" class="nav-link text-white">Langganan</a>
-                <a href="" data-white="1" class="nav-link text-white">Lainnya</a>
+            <div class="wrapper-nav-link">
+                <a href="learning-path.html" data-white="1" class="text-white nav-link">Learning Path</a>
+                <a href="langganan.html" data-white="1" class="text-white nav-link">Langganan</a>
+                <a href="" data-white="1" class="text-white nav-link">Lainnya</a>
             </div>
             <div class="account-nav-link">
-                <a href="login.html">
-                    <button class="btn btn-white">Masuk</button>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="login.html" class="link-to-login">
+                    <button class="btn btn-white bg-transparent" id="btn-login">Masuk</button>
                 </a>
-                <a href="register.html">
-                    <button class="btn btn-primary">Daftar</button>
+                <a href="register.html" class="link-to-register">
+                    <button class="btn btn-primary" id="btn-register">Daftar</button>
                 </a>
             </div>
         </nav>
     </header>
+    <div class="nav-mobile min-h-100">
+        <div class="nav-mobile-wrapper">
+            <div class="flex justify-between align-center">
+                <div class="flex">
+                    <input type="text" class="input input-search" id="search-top" placeholder="Apa yang ingin anda pelajari?">
+                    <button class="btn btn-primary btn-search w-max">
+                        <i class='bx text-lg bx-search'></i>
+                    </button>
+                </div>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="flex flex-column gap-1 justify-center align-center">
+                <div class="flex gap-1 align-center justify-center">
+                    <a href="login.html">
+                        <button class="btn btn-white">Masuk</button>
+                    </a>
+                    <a href="register.html">
+                        <button class="btn btn-primary">Daftar</button>
+                    </a>
+                </div>
+                <div class="card-mini">
+                    <a href="learning-path.html" class="nav-link">Learning Path</a>
+                </div>
+                <div class="card-mini">
+                    <a href="langganan.html" class="nav-link">Langganan</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container pt-nav bg-black text-white pb-13">
         <h1 class="text-center">Biaya & Benefit Langganan</h1>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veritatis.</p>

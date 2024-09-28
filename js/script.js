@@ -129,11 +129,22 @@ var swiper = new Swiper(".swiper-menu-testimoni", {
 });
 
 var swiper = new Swiper(".swiper-menu-learning", {
-    slidesPerView: 7,
+    slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 3
+        },
+        768: {
+            slidesPerView: 5
+        }, 
+        1024: {
+            slidesPerView: 7
+        }
+    }
 });

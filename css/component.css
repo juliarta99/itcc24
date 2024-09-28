@@ -164,9 +164,6 @@
     padding: .5rem 2rem;
     gap: 1rem;
 }
-.container-swiper-menu-learnings .all{
-    white-space: nowrap;
-}
 
 /* padding */
 .pt-nav{
@@ -555,7 +552,7 @@
     border-radius: 2rem;
     right: 0;
     transform: rotate(145deg);
-    top: 6rem;
+    bottom: -20%;
     opacity: .3;
     border: 2px var(--primary) solid;
     animation: rotate-animate 50s infinite alternate;
@@ -563,7 +560,7 @@
 .circle-b-1{
     left: 0;
     transform: rotate(-145deg);
-    top: 6rem;
+    bottom: -20%;
     border: 2px var(--primary) solid;
 }
 .circle-side-bar{
@@ -637,7 +634,7 @@
     width: 30px !important;
     height: 30px !important;
     top: 0 !important;
-    transform: translateY(85%);
+    transform: translateY(100%) !important;
 }
 
 /* pagination */
