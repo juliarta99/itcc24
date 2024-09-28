@@ -8,6 +8,9 @@
 .w-14px{
     width: 14px;
 }
+.mw-600{
+    max-width: 600px;
+}
 
 /* height */
 .min-h-100{
@@ -43,6 +46,10 @@
     color: var(--primary);
     border: 1px var(--primary) solid;
 }
+.btn-search{
+    border-radius: 0 10px 10px 0 !important;
+    padding: .7rem;
+}
 
 /* background */
 .bg-primary{
@@ -70,7 +77,7 @@
     background: linear-gradient(to top right, rgba(129, 76, 245, .3), rgba(0, 0, 0, 0), rgba(234, 76, 158, .3));
 }
 .bg-transparent{
-    background: transparent;
+    background: transparent !important;
 }
 .bg-lr-absolute-black{
     z-index: 2;
@@ -163,7 +170,7 @@
 
 /* padding */
 .pt-nav{
-    padding-top: 6rem;
+    padding-top: 6rem !important;
 }
 .pt-2{
     padding-top: 2rem !important;
@@ -174,6 +181,12 @@
 .pt-5{
     padding-top: 5rem !important;
 }
+.pb-1{
+    padding-bottom: 1rem !important;
+}
+.pb-3{
+    padding-bottom: 3rem !important;
+}
 .pb-6{
     padding-bottom: 6rem !important;
 }
@@ -181,7 +194,7 @@
     padding-bottom: 13rem !important;
 }
 .p-1{
-    padding: 1rem !important;
+    padding: 1rem;
 }
 .p-2{
     padding: 2rem !important;
@@ -221,6 +234,7 @@
     grid-template-rows: max-content 1fr;
 }
 .cols-3{
+    z-index: 1;
     -moz-column-count: 3;
     -moz-column-gap: 3%;
     -moz-column-width: 30%;
@@ -341,7 +355,19 @@
     border-radius: 10px;
     border: 1px #dddd solid;
 }
-
+.input-search{
+    border-radius: 10px 0 0 10px !important;
+    font-size: 12px;
+    width: 250px;
+    max-width: 250px;
+}
+.input-search:focus{
+    outline: none;
+}
+/* form */
+.form-auth{
+    max-width: 500px;
+}
 /* card */
 .card{
     border-radius: 1rem;
@@ -370,12 +396,20 @@
 }
 .card-learning-toggle .bg-gradient{
     background: linear-gradient(to top, var(--primary), rgba(0, 0, 0, 0));
+    opacity: .5;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+    transition: all .5s;
+}
+.card-learning-toggle:hover .img-learning-toggle{
+    transform: scale(1.1);
+}
+.card-learning-toggle:hover .bg-gradient, .card-learning-toggle.active .bg-gradient{
+    opacity: 1;
 }
 .card-learning{
     width: 100%;
@@ -423,8 +457,14 @@
     overflow: hidden;
     transition: all .3s ease;
 }
-.cols-3 div:first-child{
+.cols-3 a{
+    display: block;
+}
+.cols-3 a:first-child{
     margin-top: -2rem;
+}
+.cols-3 a:nth-child(7), .cols-3 a:nth-child(8), .cols-3 a:nth-child(9){
+    top: -1rem !important;
 }
 .card-academy:hover{
     box-shadow: 0 10px 75px -1px rgba(129, 76, 245, .5);
@@ -440,6 +480,10 @@
     top: 0;
     left: 0;
     z-index: -2;
+    transition: all .5s;
+}
+.card-academy:hover img{
+    transform: scale(1.1);
 }
 
 .content-langganan{
@@ -483,15 +527,16 @@
 
 /* circle */
 .circle-absolute{
-    width: 100px;
-    height: 100px;
+    width: 10%;
+    max-width: 100px;
+    aspect-ratio: 1/1;
     border-radius: 100%;
     position: absolute;
     left: 0;
     top: 9rem;
     filter: blur(75px);
     z-index: -1;
-    animation: right-left 3s infinite alternate;
+    animation: right-left 10s infinite alternate;
 }
 /* .circle-1{
 } */
@@ -513,7 +558,7 @@
     top: 6rem;
     opacity: .3;
     border: 2px var(--primary) solid;
-    animation: rotate-animate 20s infinite alternate;
+    animation: rotate-animate 50s infinite alternate;
 }
 .circle-b-1{
     left: 0;
@@ -561,6 +606,12 @@
     backdrop-filter: blur(7.3px);
     -webkit-backdrop-filter: blur(7.3px);
 }
+.glassmorphism-xl{
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.4px);
+    -webkit-backdrop-filter: blur(17.4px);
+}
 
 /* swiper */
 .swiper-button-next, .swiper-button-prev{
@@ -578,6 +629,15 @@
 }
 .swiper-button-next::after, .swiper-button-prev::after{
     font-size: 16px !important;
+}
+.swiper-button-mini.swiper-button-next::after, .swiper-button-mini.swiper-button-prev::after{
+    font-size: 12px !important;
+}
+.swiper-button-mini{
+    width: 30px !important;
+    height: 30px !important;
+    top: 0 !important;
+    transform: translateY(85%);
 }
 
 /* pagination */
@@ -607,10 +667,12 @@
 
 @keyframes right-left {
     0% {
-        transform: translateX(0);
+        top: 10%;
+        left: 0;
     }
     100% {
-        transform: translateX(500%);
+        top: 10%;
+        left: 80%;
     }
 }
 @keyframes rotate-animate {
@@ -627,5 +689,23 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
     }
 }
