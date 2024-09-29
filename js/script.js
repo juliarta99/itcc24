@@ -51,10 +51,10 @@ $(document).ready(function() {
         }
     });  
     
-    const datasChart = [65, 59, 80, 81, 56, 45, 90];
-    const monthsChart = ['09/09', '10/09', '11/09', '12/09', '13/09', '14/09', '15/09'];
+    const datasChart = [65, 59, 80, 81, 56];
+    const monthsChart = ['09/09', '10/09', '11/09', '12/09', '13/09'];
     $.each(datasChart, function(index, value) {
-        $('#barChart').append('<div class="bar" title="' + monthsChart[index] + ' - ' + value +' menit"><span class="text-xs">' + value + '<br> menit ' + '</span></div>');
+        $('#barChart').append('<div class="bar" title="' + monthsChart[index] + ' - ' + value +' menit"><span class="text-xs">' + value + '</span></div>');
     });
     $.each(monthsChart, function(index, month) {
         $('#monthLabels').append('<div class="month-label text-xs">' + month + '</div>');
