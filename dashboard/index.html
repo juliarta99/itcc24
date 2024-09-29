@@ -30,12 +30,25 @@
                 <a href="jobs.html" data-white="1" class="nav-link text-white">Job</a>
             </div>
             <div class="account-nav-link">
-                <a href="login.html" class="link-to-login">
-                    <button class="btn btn-white">Masuk</button>
-                </a>
-                <a href="register.html" class="link-to-register">
-                    <button class="btn btn-primary">Daftar</button>
-                </a>
+                <div class="flex gap-05 align-center text-primary cursor-pointer" id="toggle-profile">
+                    <img src="../assets/john-doe.jpg" class="profile-img" alt="">
+                    <i class='bx bx-chevron-down' id="icon-toggle-profile"></i>
+                </div>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="wrapper-menu-account" id="menu-account">
+                    <div class="menu-account">
+                        <i class="bx bx-user"></i>
+                        <p>Profil</p>
+                    </div>
+                    <div class="menu-account logout">
+                        <i class='bx bx-log-out'></i>
+                        <p>Keluar</p>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>

@@ -9,33 +9,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="lib/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="lib/swiperjs/swiper-bundle.min.css">
 </head>
 <body>
-    <header id="navbar" class="shadow-md glassmorphism">
+    <header id="navbar" class="">
         <nav>
             <div class="logo flex gap-05">
                 <a href="index.html" class="text-primary">
-                    <h1>Tech Grow</h1>
+                    <h1>TECH</h1>
                 </a>
-                <input type="text" class="input" placeholder="Apa yang ingin anda pelajari?">
+                <div class="flex" id="search-nav">
+                    <input type="text" class="input input-search" id="search-top" placeholder="Apa yang ingin anda pelajari?">
+                    <button class="btn btn-primary btn-search w-max">
+                        <i class='bx text-lg bx-search'></i>
+                    </button>
+                </div>
             </div>
             <div class="wrapper-nav-link">
-                <a href="learning-path.html" class="nav-link">Learning Path</a>
-                <a href="langganan.html" class="nav-link">Langganan</a>
-                <a href="" class="nav-link">Lainnya</a>
+                <a href="learning-path.html" data-white="1" class="nav-link text-white">Learning Path</a>
+                <a href="langganan.html" data-white="1" class="nav-link text-white">Langganan</a>
+                <a href="" data-white="1" class="nav-link text-white">Lainnya</a>
             </div>
             <div class="account-nav-link">
-                <a href="login.html">
-                    <button class="btn btn-white">Masuk</button>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="login.html" class="link-to-login">
+                    <button class="btn btn-white" id="btn-login">Masuk</button>
                 </a>
-                <a href="register.html">
-                    <button class="btn btn-primary">Daftar</button>
+                <a href="register.html" class="link-to-register">
+                    <button class="btn btn-primary" id="btn-register">Daftar</button>
                 </a>
             </div>
         </nav>
     </header>
+    <div class="nav-mobile min-h-100">
+        <div class="nav-mobile-wrapper">
+            <div class="flex justify-between align-center bg-gradient">
+                <div class="flex">
+                    <input type="text" class="input input-search" id="search-top" placeholder="Apa yang ingin anda pelajari?">
+                    <button class="btn btn-primary btn-search w-max">
+                        <i class='bx text-lg bx-search'></i>
+                    </button>
+                </div>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="container flex flex-column gap-1">
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-shape-circle'></i>
+                    <a href="learning-path.html" class="nav-link">Learning Path</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="langganan.html" class="nav-link">Langganan</a>
+                </div>
+                <a href="login.html" class="mt-05">
+                    <button class="btn w-full btn-white">Masuk</button>
+                </a>
+                <a href="register.html">
+                    <button class="btn w-full btn-primary">Daftar</button>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="">
         <div class="container pt-nav bg-black text-white pb-6">
             <div class="">
@@ -47,10 +91,6 @@
                 <div class="flex align-center gap-05 mt-1 card-mini">
                     <h5 class="text-black">4,50</h5>
                     <i class='bx bxs-star text-highlight'></i>
-                    <i class='bx bxs-star text-highlight'></i>
-                    <i class='bx bxs-star text-highlight'></i>
-                    <i class='bx bxs-star text-highlight'></i>
-                    <i class='bx bxs-star-alf text-highlight'></i>
                 </div>
                 <div class="flex align-center gap-05 mt-1 card-mini">
                     <i class='bx bx-shape-circle text-primary'></i>
@@ -66,18 +106,16 @@
                         <button class="btn btn-white">Silabus</button>
                     </a>
                 </div>
-                <div class="flex justify-center align-center flex-column gap-05">
-                    <button class="btn btn-primary m-auto">Mulai Belajar</button>
+                <button class="btn btn-primary m-auto">Mulai Belajar</button>
+                <div class="flex">
                     <div class="flex">
-                        <div class="flex">
-                            <img src="assets/john-doe.jpg" class="img-review-in-detail" alt="">
-                            <img src="assets/john-doe.jpg" class="img-review-in-detail" alt="">
-                            <img src="assets/john-doe.jpg" class="img-review-in-detail" alt="">
-                        </div>
-                        <div class="flex align-center gap-05">
-                            <h4>2,595,834</h4>
-                            <p>Lorem, ipsum dolor.</p>
-                        </div>
+                        <img src="assets/john-doe.jpg" class="img-review-in-detail" alt="">
+                        <img src="assets/john-doe.jpg" class="img-review-in-detail" alt="">
+                        <img src="assets/john-doe.jpg" class="img-review-in-detail" alt="">
+                    </div>
+                    <div class="flex align-center gap-05">
+                        <h4>2,595,834</h4>
+                        <p>Lorem, ipsum dolor.</p>
                     </div>
                 </div>
             </div>
@@ -89,7 +127,7 @@
         </div>
         <div class="container bg-gradient">
             <div class="detail-course-wrapper">
-                <div class="detail-icon-course card grid-cols-4 gap-1">
+                <div class="detail-icon-course card grid-cols-4 gap-1 align-center justify-center">
                     <div class="flex align-center gap-1">
                         <i class='bx bxs-bar-chart-alt-2 text-primary text-2xl'></i>
                         <div class="flex flex-column">
@@ -100,22 +138,61 @@
                     <div class="flex align-center gap-1">
                         <i class='bx bxs-bar-chart-alt-2 text-primary text-2xl'></i>
                         <div class="flex flex-column">
-                            <p>Level skill</p>
-                            <h3>Pemula</h3>
+                            <p>Waktu Pengerjaan</p>
+                            <h3>50 Jam</h3>
                         </div>
                     </div>
                     <div class="flex align-center gap-1">
                         <i class='bx bxs-bar-chart-alt-2 text-primary text-2xl'></i>
                         <div class="flex flex-column">
-                            <p>Level skill</p>
-                            <h3>Pemula</h3>
+                            <p>Project</p>
+                            <h3>10</h3>
                         </div>
                     </div>
                     <div class="flex align-center gap-1">
                         <i class='bx bxs-bar-chart-alt-2 text-primary text-2xl'></i>
                         <div class="flex flex-column">
-                            <p>Level skill</p>
-                            <h3>Pemula</h3>
+                            <p>Prasyarat</p>
+                            <h3>Tidak Ada</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-course grid-cols-2 gap-1 mt-3">
+                    <div class="">
+                        <h2>Deskripsi</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates eligendi recusandae enim dicta est reiciendis corrupti accusantium cumque amet consequatur explicabo, consectetur vitae laborum ratione eius tempora similique necessitatibus autem?</p>
+                    </div>
+                    <div class="">
+                        <h3>Peralatan Belajar</h3>
+                        <p class="mt-05">Spesifikasi minimal perangkat</p>
+                        <div class="grid-cols-2 gap-05">
+                            <div class="grid-spesification align-center">
+                                <i class='bx bx-save'></i>
+                                <p class="font-bold">RAM</p>
+                                <p></p>
+                                <p class="text-xs">2GB <span class="text-primary">(Rekomendasi 8GB)</span></p>
+                            </div>
+                            <div class="grid-spesification align-center">
+                                <i class='bx bx-laptop'></i>
+                                <p class="font-bold">Sistem Operasi</p>
+                                <p></p>
+                                <p class="text-xs">Windows, MacOS, Linux</p>
+                            </div>
+                            <div class="grid-spesification align-center">
+                                <i class='bx bx-chip'></i>
+                                <p class="font-bold">Processor</p>
+                                <p></p>
+                                <p class="text-xs">Intel Core i3 <span class="text-primary">(Rekomendasi Intel Core i5 keatas)</span></p>
+                            </div>
+                        </div>
+                        <p class="mt-05">Tools</p>
+                        <div class="grid-cols-2 gap-05">
+                            <div class="grid-spesification align-center">
+                                <i class='bx bx-cog'></i>
+                                <p class="font-bold">Intellij Idea Community</p>
+                                <p></p>
+                                <p class="text-xs">Cara instalasi akan dijelaskan pada kelas ini</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,11 +259,11 @@
             </div>
         </div>
         <div class="silabus-wrapper mt-3">
-            <div class="card position-relative w-full">
+            <div class="card position-relative">
                 <div class="number-silabus">
                     <h4>1</h4>
                 </div>
-                <div class="flex gap-1 align-center">
+                <div class="flex gap-1 align-center title-material">
                     <h3>Lorem, ipsum dolor.</h3>
                     <div class="flex gap-05 align-center">
                         <i class='bx bx-timer'></i>
@@ -194,7 +271,7 @@
                     </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt maiores praesentium, iusto quos qui voluptate?</p>
-                <div class="card-mini flex gap-05">
+                <div class="card-mini flex gap-05 details-material mt-05">
                     <div class="flex align-center gap-05">
                         <i class='bx bx-file'></i>
                         <p>5 Materi</p>
@@ -211,11 +288,11 @@
                     </div>
                 </div>
             </div>
-            <div class="border-0 card position-relative w-full">
+            <div class="border-0 card position-relative">
                 <div class="number-silabus">
                     <h4>1</h4>
                 </div>
-                <div class="flex gap-1 align-center">
+                <div class="flex gap-1 align-center title-material">
                     <h3>Lorem, ipsum dolor.</h3>
                     <div class="flex gap-05 align-center">
                         <i class='bx bx-timer'></i>
@@ -223,7 +300,7 @@
                     </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt maiores praesentium, iusto quos qui voluptate?</p>
-                <div class="card-mini flex gap-05">
+                <div class="card-mini flex gap-05 details-material mt-05">
                     <div class="flex align-center gap-05">
                         <i class='bx bx-file'></i>
                         <p>5 Materi</p>
@@ -240,11 +317,11 @@
                     </div>
                 </div>
             </div>
-            <div class="border-0 card position-relative w-full">
+            <div class="border-0 card position-relative">
                 <div class="number-silabus">
                     <h4>1</h4>
                 </div>
-                <div class="flex gap-1 align-center">
+                <div class="flex gap-1 align-center title-material">
                     <h3>Lorem, ipsum dolor.</h3>
                     <div class="flex gap-05 align-center">
                         <i class='bx bx-timer'></i>
@@ -252,7 +329,7 @@
                     </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt maiores praesentium, iusto quos qui voluptate?</p>
-                <div class="card-mini flex gap-05">
+                <div class="card-mini flex gap-05 details-material mt-05">
                     <div class="flex align-center gap-05">
                         <i class='bx bx-file'></i>
                         <p>5 Materi</p>
@@ -271,8 +348,109 @@
             </div>
         </div>
     </div>
+    <div class="container bg-gradient">
+        <div class="circle-absolute circle-tersier"></div>
+        <h4 class="text-primary text-center">Apa kata meraka?</h4>
+        <h1 class="text-center">Ulasan Kelas</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="swiper swiper-2 mt-15">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide p-1">
+                    <div class="card-testimoni-course shadow-md">
+                        <div class="flex flex-column align-center">
+                            <img src="assets/john-doe.jpg" alt="" class="img-testimoni-course">
+                            <h3>John Doe Bagus</h3>
+                            <div class="flex gap-05 align-center text-xs">
+                                <i class='bx bx-buildings'></i>
+                                <p>PT. Cahaya Abidi</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nam, veritatis fuga harum dolorum excepturi. Repudiandae autem, porro cumque in eius commodi perspiciatis recusandae doloremque hic nostrum, nesciunt, adipisci eum.</p>
+                        <div class="flex align-center gap-05 mt-1">
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star-half text-highlight'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-1">
+                    <div class="card-testimoni-course shadow-md">
+                        <div class="flex flex-column align-center">
+                            <img src="assets/john-doe.jpg" alt="" class="img-testimoni-course">
+                            <h3>John Doe Bagus</h3>
+                            <div class="flex gap-05 align-center text-xs">
+                                <i class='bx bx-buildings'></i>
+                                <p>PT. Cahaya Abidi</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nam, veritatis fuga harum dolorum excepturi. Repudiandae autem, porro cumque in eius commodi perspiciatis recusandae doloremque hic nostrum, nesciunt, adipisci eum.</p>
+                        <div class="flex align-center gap-05 mt-1">
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star-half text-highlight'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-1">
+                    <div class="card-testimoni-course shadow-md">
+                        <div class="flex flex-column align-center">
+                            <img src="assets/john-doe.jpg" alt="" class="img-testimoni-course">
+                            <h3>John Doe Bagus</h3>
+                            <div class="flex gap-05 align-center text-xs">
+                                <i class='bx bx-buildings'></i>
+                                <p>PT. Cahaya Abidi</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nam, veritatis fuga harum dolorum excepturi. Repudiandae autem, porro cumque in eius commodi perspiciatis recusandae doloremque hic nostrum, nesciunt, adipisci eum.</p>
+                        <div class="flex align-center gap-05 mt-1">
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star text-highlight'></i>
+                            <i class='bx bxs-star-half text-highlight'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="container bg-black text-white">
+        <h4 class="text-primary text-center">Apa kata meraka?</h4>
+        <h1 class="text-center">Pertanyaan yang sering ditanyakan seputar kelas ini</h1>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="mt-15 border-sm overflow-hidden">
+            <div class="accordion-header">
+                <h3>Section 1</h3>
+                <i class='bx bx-chevron-down text-2xl' ></i>
+            </div>
+            <div class="accordion-content">
+                <p>Konten untuk section 1</p>
+            </div>
+            <div class="accordion-header">
+                <h3>Section 1</h3>
+                <i class='bx bx-chevron-down text-2xl' ></i>
+            </div>
+            <div class="accordion-content">
+                <p>Konten untuk section 1</p>
+            </div>
+            <div class="accordion-header">
+                <h3>Section 1</h3>
+                <i class='bx bx-chevron-down text-2xl' ></i>
+            </div>
+            <div class="accordion-content">
+                <p>Konten untuk section 1</p>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="lib/swiperjs/swiper-bundle.min.js"></script>
 <script src="lib/jquery/jquery-3.7.1.min.js"></script>
+<script src="js/navbar.js"></script>
 <script src="js/script.js"></script>
 </html>

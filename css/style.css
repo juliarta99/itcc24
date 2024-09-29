@@ -101,16 +101,54 @@ nav > div:last-child{
 .humberger.active span:last-child{
     transform: rotate(-45deg) translate(15%, -200%);
 }
+.account-nav-link{
+    position: relative;
+}
+.wrapper-menu-account{
+    position: absolute;
+    top: 3rem;
+    transform: scale(0);
+    /* display: none; */
+    right: 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 20px -1px rgba(129, 76, 245, .2);
+    border: 1px rgba(129, 76, 245, .2) solid;
+    transition: all .3s ease;
+}
+.wrapper-menu-account.show{
+    transform: scale(1);
+    /* display: block; */
+}
+.wrapper-menu-account .menu-account:not(:nth-child(1)) {
+    margin-top: .8rem;
+}
+.wrapper-menu-account .menu-account{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: 14px;
+}
+
+.profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px var(--primary) solid;
+}
 .nav-mobile{
     position: fixed;
     min-height: 100vh;
     width: 100%;
     z-index: 999;
-    background: linear-gradient(to top right, var(--primary), #fff, var(--sekunder));
-    display: none;
+    background-color: var(--white);
+    transform: translateX(-100%);
+    transition: all .5s ease;
 }
 .nav-mobile.show{
-    display: block;
+    transform: translateX(0%);
 }
 .nav-mobile-wrapper > div{
     padding: 1rem 2rem;
@@ -260,20 +298,22 @@ nav > div:last-child{
 .accordion-content {
     display: none;
     padding: 15px;
-    background-color: var(--white);
+    border-bottom: 1px var(--primary) solid;
 }
 
-.accordion-header {
+.accordion-header{
     cursor: pointer;
     color: var(--text);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
     margin: 0;
+    color: var(--white);
+    border-bottom: 1px var(--primary) solid;
 }
 .accordion-header:hover {
     background-color: var(--primary);
-    color: var(--white);
 }
 .card-bubble-wrapper{
     position: relative;
@@ -355,6 +395,12 @@ nav > div:last-child{
     top: 0;
     left: 0;
     z-index: 1;
+}
+.img-testimoni-course{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .overlay-card-learning{
     position: relative;
@@ -450,11 +496,19 @@ nav > div:last-child{
     position: relative;
     top: -85px;
 }
+.silabus-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .silabus-wrapper .card:first-child{
     border-radius: 0 1rem 0 0 !important;
 }
 .silabus-wrapper .card:last-child{
     border-radius: 0 0 1rem 1rem !important;
+}
+.silabus-wrapper .card{
+    width: calc(100% - 50px) !important;
 }
 .number-silabus{
     position: absolute;
@@ -483,7 +537,6 @@ nav > div:last-child{
     position: sticky;
     top: 0;
 }
-
 
 .side-bar-link{
     padding: 1rem 2rem 1rem 2rem !important;

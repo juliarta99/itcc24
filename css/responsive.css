@@ -22,6 +22,14 @@
     .humberger{
         display: block;
     }
+    nav > div:last-child{
+        display: flex;
+        justify-content: end;
+        gap: .5rem;
+    }
+    .btn-search{
+        padding: .5rem !important;
+    }
 
     .landing{
         grid-template-columns: 1fr !important;
@@ -46,7 +54,7 @@
         max-width: 100%;
     }
     .text-2xl{
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 }
 @media (max-width: 640px) {
@@ -54,7 +62,7 @@
         margin-bottom: 3rem;
     }
     .container{
-        padding: 1rem 1.5rem;
+        padding: 2rem 1.5rem;
     }
     .card{
         padding: 1.5rem;
@@ -67,25 +75,25 @@
         width: 100%;
     }
     .text-2xl, h1{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     h2{
+        font-size: 1.4rem;
+    }
+    .text-lg, h3{
         font-size: 1.2rem;
     }
-    h3{
+    .text-md, h4{
         font-size: 1rem;
     }
-    h4{
-        font-size: .8rem;
-    }
-    h5{
-        font-size: .7rem;
+    .text-sm, h5{
+        font-size: .9rem;
     }
     h6{
-        font-size: .5rem;
+        font-size: .7rem;
     }
     a, p, button{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .btn{
         padding: .6rem 1.5rem;
@@ -160,11 +168,11 @@
         padding: 1rem;
     }
     .swiper-button-next, .swiper-button-prev{
-        width: 30px !important;
-        height: 30px !important;
+        width: 32px !important;
+        height: 32px !important;
     }
     .swiper-button-next::after, .swiper-button-prev::after{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .bg-lr-absolute-black{
         display: none;
@@ -195,5 +203,13 @@
     }
     .card.activity button{
         width: 100%;
+    }
+    .details-material, .title-material{
+        align-items: start;
+        flex-direction: column;
+    }
+    .title-material{
+        gap: 0 !important;
+        margin-bottom: .5rem;
     }
 }

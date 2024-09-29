@@ -247,6 +247,11 @@
     display: grid;
     grid-template-rows: max-content 1fr;
 }
+.grid-spesification{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: .5rem;
+}
 .cols-3{
     z-index: 1;
     -moz-column-count: 3;
@@ -350,6 +355,9 @@
 /* font weight */
 .font-light{
     font-weight: 400;
+}
+.font-bold{
+    font-weight: bold;
 }
 
 /* shadow */
@@ -470,6 +478,17 @@
     position: relative;
     overflow: hidden;
     transition: all .3s ease;
+}
+.card-testimoni-course{
+    padding: 1rem 1.5rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    overflow: hidden;
 }
 .cols-3 a{
     display: block;

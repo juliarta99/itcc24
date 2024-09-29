@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('.accordion-header').click(function() {
         $(this).next('.accordion-content').slideToggle(300);
+        $('.accordion-header').removeClass('bg-primary');
+        $(this).toggleClass('bg-primary');
         $('.accordion-content').not($(this).next()).slideUp(300);
-        var imageSrc = $(this).data('image');
-        $('#image-display').attr('src', imageSrc);
     });
 
     $('.side-bar-link').click(function() {
@@ -31,7 +31,17 @@ $(document).ready(function() {
         $('.nav-mobile').toggleClass('show');
     })
 
-    $('#btn-collapse').on('click', function() {
+    $('#toggle-profile').click(function() {
+        $('#menu-account').toggleClass('show');
+        const icon = $("#icon-toggle-profile");
+        if (icon.hasClass('bx-chevron-down')) {
+            icon.removeClass('bx-chevron-down').addClass('bx-chevron-up');
+        } else {
+            icon.removeClass('bx-chevron-up').addClass('bx-chevron-down');
+        }
+    })
+
+    $('#btn-collapse').click(function() {
         const icon = $(this).find('i');
         if (icon.hasClass('bx-left-arrow-circle')) {
             icon.removeClass('bx-left-arrow-circle').addClass('bx-right-arrow-circle');
@@ -134,6 +144,45 @@ var swiper = new Swiper(".swiper-learnings", {
     }
 });
 
+var swiper = new Swiper(".swiper-2", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop:true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        }
+    }
+});
+var swiper = new Swiper(".swiper-learnings", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 3
+        }, 
+        1024: {
+            slidesPerView: 4
+        }
+    }
+});
+
 var swiper = new Swiper(".swiper-learnings-dashboard", {
     slidesPerView: 3,
     spaceBetween: 0,
@@ -145,12 +194,12 @@ var swiper = new Swiper(".swiper-learnings-dashboard", {
 });
 
 var swiper = new Swiper(".swiper-menu-testimoni", {
-    // slidesPerView: 1,
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     pauseOnMouseEnter: true
-    // },
+    slidesPerView: 1,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
     spaceBetween: 30,
     loop: true,
     navigation: {
