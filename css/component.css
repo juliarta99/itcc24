@@ -59,6 +59,7 @@
 .btn-search{
     border-radius: 0 10px 10px 0 !important;
     padding: .7rem;
+    border: 1px #ddd solid !important;
 }
 .btn-collapse{
     padding: 0;
@@ -83,6 +84,9 @@
 }
 .bg-white{
     background-color: var(--white);
+}
+.bg-white-important{
+    background-color: var(--white) !important;
 }
 .bg{
     background-color: var(--bg);
@@ -188,6 +192,9 @@
 
 /* padding */
 .pt-nav{
+    padding-top: 6rem !important;
+}
+.pt-nav-dashboard{
     padding-top: 6rem !important;
 }
 .pt-2{
@@ -387,7 +394,11 @@
     width: 250px;
     max-width: 250px;
 }
-.input-search:focus{
+.input-search-dashboard{
+    border-radius: 10px 0 0 10px !important;
+    font-size: 12px;
+}
+.input-search:focus, .input-search-dashboard:focus{
     outline: none;
 }
 /* form */

@@ -1,3 +1,8 @@
+@media (max-width: 1100px) {
+    .grid-cols-3{
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
 @media (max-width: 1024px) {
     p{
         font-size: 14px;
@@ -10,13 +15,40 @@
     }
 }
 @media (max-width: 960px) {
+    .pt-nav-dashboard{
+        padding-top: 9rem !important;
+    }
+    .trigger-side-bar{
+        display: block;
+    }
+    .grid-cols-2-max{
+        grid-template-columns: 100%;
+    }
+    #side-bar{
+        position: absolute;
+        transform: translateX(-100%);
+        z-index: 98;
+        transition: all .5s ease;
+    }
+    #side-bar.show{
+        transform: translateX(0);
+    }
+    #btn-collapse{
+        display: none;
+    }
+    .btn-close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
     nav{
         grid-template-columns: 1fr 1fr;
     }
     #search-nav, .wrapper-nav-link, .link-to-login, .link-to-register{
         display: none;
     }
-    .humberger{
+    .humberger, .humberger-dashboard{
         display: block;
     }
     nav > div:last-child{
@@ -27,7 +59,6 @@
     .btn-search{
         padding: .5rem !important;
     }
-
     .landing{
         grid-template-columns: 1fr !important;
         gap: 4rem;
@@ -55,6 +86,9 @@
     }
 }
 @media (max-width: 640px) {
+    .grid-cols-3{
+        grid-template-columns: 1fr !important;
+    }
     .swiper-button-mini{
         display: none !important;
     }
@@ -179,6 +213,10 @@
     }
     .bg-lr-absolute-black{
         display: none;
+    }
+    .card-progress-activity{
+        justify-content: center;
+        flex-direction: column;
     }
 }
 @media (max-width: 500px) {

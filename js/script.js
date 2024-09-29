@@ -7,13 +7,32 @@ $(document).ready(function() {
     });
 
     $('.side-bar-link').click(function() {
+        const namePage = $(this).find('.name-link-side-bar');
+        $('#title-has-page-dashboard').html(namePage.html());
+
         $('.side-bar-link').removeClass('active');
-        
         $(this).addClass('active');
         $('[id^="content-dashboard"]').addClass('hidden');
-        
         var target = $(this).data('target');
         $(target).removeClass('hidden');
+
+        $('.humberger-dashboard').removeClass('active');
+        $('#side-bar').removeClass('show');
+        $('body').removeClass('overflow-hidden');
+        $('.nav-mobile-trigger-side-bar').removeClass('up');
+    });
+    
+    $('.humberger').click(function() {
+        $('.humberger').toggleClass('active');
+        $('.nav-mobile').toggleClass('show');
+        $('body').toggleClass('overflow-hidden');
+    });
+
+    $('.humberger-dashboard').click(function() {
+        $('.humberger-dashboard').toggleClass('active');
+        $('#side-bar').toggleClass('show');
+        $('body').toggleClass('overflow-hidden');
+        $('.nav-mobile-trigger-side-bar').toggleClass('up');
     });
 
     $('.show-class-link').click(function() {
@@ -25,11 +44,6 @@ $(document).ready(function() {
         var target = $(this).data('target');
         $(target).removeClass('hidden');
     }); 
-    
-    $('.humberger').click(function() {
-        $('.humberger').toggleClass('active');
-        $('.nav-mobile').toggleClass('show');
-    })
 
     $('#toggle-profile').click(function() {
         $('#menu-account').toggleClass('show');
@@ -39,7 +53,7 @@ $(document).ready(function() {
         } else {
             icon.removeClass('bx-chevron-up').addClass('bx-chevron-down');
         }
-    })
+    });
 
     $('#btn-collapse').click(function() {
         const icon = $(this).find('i');
@@ -61,7 +75,7 @@ $(document).ready(function() {
         }
     });  
     
-    const datasChart = [65, 59, 80, 81, 56];
+    const datasChart = [90, 70, 80, 102, 80];
     const monthsChart = ['09/09', '10/09', '11/09', '12/09', '13/09'];
     $.each(datasChart, function(index, value) {
         $('#barChart').append('<div class="bar" title="' + monthsChart[index] + ' - ' + value +' menit"><span class="text-xs">' + value + '</span></div>');
@@ -166,31 +180,43 @@ var swiper = new Swiper(".swiper-2", {
 var swiper = new Swiper(".swiper-learnings", {
     slidesPerView: 1,
     spaceBetween: 0,
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
         640: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            loop: false,
         },
         768: {
-            slidesPerView: 3
+            slidesPerView: 3,
+            loop: false,
         }, 
         1024: {
-            slidesPerView: 4
+            slidesPerView: 4,
+            loop: false,
         }
     }
 });
 
 var swiper = new Swiper(".swiper-learnings-dashboard", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        900: {
+            slidesPerView: 2
+        }, 
+        1024: {
+            slidesPerView: 3
+        }
+    }
 });
 
 var swiper = new Swiper(".swiper-menu-testimoni", {
