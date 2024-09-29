@@ -38,58 +38,63 @@
             </div>
         </nav>
     </header>
-    <div class="grid-cols-2-max">
+    <div class="grid-cols-2-max" id="container-dashboard">
         <section id="side-bar" class="pt-5 bg-white overflow-hidden shadow-md">
             <div class="position-relative p-3 overflow-hidden">
-                <h1 class="text-center z-1">Challange</h1>
+                <button class="btn btn-collapse" id="btn-collapse">
+                    <i class='bx bx-left-arrow-circle text-lg'></i>
+                </button>
+                <h1 class="text-center z-1" id="title-side-bar">Challange</h1>
                 <div class="circle-b-absolute circle-side-bar"></div>
                 <div class="circle-b-absolute circle-side-bar-1"></div>
             </div>
             <div class="flex flex-column z-1">
-                <div data-target="#content-dashboard-1" class="flex cursor-pointer gap-1 align-center side-bar-link active">
-                    <i class='bx bx-file' ></i>
-                    <p>Semua Challange</p>
-                </div>
-                <div data-target="#content-dashboard-2" class="flex cursor-pointer gap-1 align-center side-bar-link">
+                <div data-target="#content-dashboard-1" class="cursor-pointer flex gap-1 align-center side-bar-link active">
                     <i class='bx bx-notepad'></i>
-                    <p>Challange yang diikuti</p>
+                    <p class="name-link-side-bar">Semua Challange</p>
+                </div>
+                <div data-target="#content-dashboard-2" class="cursor-pointer flex gap-1 align-center side-bar-link">
+                    <i class='bx bx-file' ></i>
+                    <p class="name-link-side-bar">Challange yang diikuti</p>
                 </div>
             </div>
         </section>
         <div id="content-dashboard-1">
             <div class="container pt-nav bg-gradient min-h-100">
-                <h2>Semua Challange</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, omnis.</p>
-                <input type="text" class="input w-full mt-1" placeholder="Cari challange">
-                <div class="grid-cols-3 mt-15 gap-1">
-                    <div class="card w-full p-0 border-sm overflow-hidden">
-                        <div class="p-1 bg-highlight text-white">
-                            <p>3 hari lagi</p>
+                <div class="mw">
+                    <h2>Semua Challange</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, omnis.</p>
+                    <input type="text" class="input w-full mt-1" placeholder="Cari challange">
+                    <div class="grid-cols-3 mt-15 gap-1">
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-highlight text-white">
+                                <p>3 hari lagi</p>
+                            </div>
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                            </div>
                         </div>
-                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
-                        <div class="p-1">
-                            <h3>Lorem ipsum dolor sit.</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-highlight text-white">
+                                <p>3 hari lagi</p>
+                            </div>
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card w-full p-0 border-sm overflow-hidden">
-                        <div class="p-1 bg-highlight text-white">
-                            <p>3 hari lagi</p>
-                        </div>
-                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
-                        <div class="p-1">
-                            <h3>Lorem ipsum dolor sit.</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
-                        </div>
-                    </div>
-                    <div class="card w-full p-0 border-sm overflow-hidden">
-                        <div class="p-1 bg-highlight text-white">
-                            <p>3 hari lagi</p>
-                        </div>
-                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
-                        <div class="p-1">
-                            <h3>Lorem ipsum dolor sit.</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-highlight text-white">
+                                <p>3 hari lagi</p>
+                            </div>
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,47 +102,49 @@
         </div>
         <div id="content-dashboard-2" class="hidden">
             <div class="container pt-nav bg-gradient min-h-100">
-                <h2>Challange yang Diikuti</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, omnis.</p>
-                <input type="text" class="input w-full mt-1" placeholder="Cari challange">
-                <div class="grid-cols-3 mt-15 gap-1">
-                    <div class="card w-full p-0 border-sm overflow-hidden">
-                        <div class="p-1 bg-highlight text-white">
-                            <p>Batas Pengumpulan : 3 hari lagi</p>
-                        </div>
-                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
-                        <div class="p-1">
-                            <h3>Lorem ipsum dolor sit.</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
-                            <div class="flex flex-column gap-05 justify-center mt-1">
-                                <button class="btn btn-primary">Submission</button>
+                <div class="mw">
+                    <h2>Challange yang Diikuti</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, omnis.</p>
+                    <input type="text" class="input w-full mt-1" placeholder="Cari challange">
+                    <div class="grid-cols-3 mt-15 gap-1">
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-highlight text-white">
+                                <p>Batas Pengumpulan : 3 hari lagi</p>
+                            </div>
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-primary">Submission</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card w-full p-0 border-sm overflow-hidden">
-                        <div class="p-1 bg-sekunder text-white">
-                            <p>Anda meraih Peringkat 1</p>
-                        </div>
-                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
-                        <div class="p-1">
-                            <h3>Lorem ipsum dolor sit.</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
-                            <div class="flex flex-column gap-05 justify-center mt-1">
-                                <button class="btn btn-white">Sertifikat</button>
-                                <button class="btn btn-primary">Lihat Submission</button>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-sekunder text-white">
+                                <p>Anda meraih Peringkat 1</p>
+                            </div>
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-white">Sertifikat</button>
+                                    <button class="btn btn-primary">Lihat Submission</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card w-full p-0 border-sm overflow-hidden">
-                        <div class="p-1 bg-primary text-white">
-                            <p>Selesai</p>
-                        </div>
-                        <img src="../assets/kenapa-1.png" class="w-full" alt="">
-                        <div class="p-1">
-                            <h3>Lorem ipsum dolor sit.</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
-                            <div class="flex flex-column gap-05 justify-center mt-1">
-                                <button class="btn btn-primary">Lihat Submission</button>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-primary text-white">
+                                <p>Selesai</p>
+                            </div>
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reiciendis eius voluptate officiis consectetur nemo.</p>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-primary">Lihat Submission</button>
+                                </div>
                             </div>
                         </div>
                     </div>

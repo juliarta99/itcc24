@@ -11,6 +11,11 @@
 .mw-600{
     max-width: 600px;
 }
+.mw{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
 
 /* height */
 .min-h-100{
@@ -21,6 +26,11 @@
 }
 .h-max{
     height: max-content;
+}
+
+/* white space */
+.white-space-nowrap{
+    white-space: nowrap;
 }
 
 /* cursor */
@@ -49,6 +59,13 @@
 .btn-search{
     border-radius: 0 10px 10px 0 !important;
     padding: .7rem;
+}
+.btn-collapse{
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
 
 /* background */
@@ -552,7 +569,7 @@
     border-radius: 2rem;
     right: 0;
     transform: rotate(145deg);
-    bottom: -20%;
+    top: 6rem;
     opacity: .3;
     border: 2px var(--primary) solid;
     animation: rotate-animate 50s infinite alternate;
@@ -560,7 +577,7 @@
 .circle-b-1{
     left: 0;
     transform: rotate(-145deg);
-    bottom: -20%;
+    top: 6rem;
     border: 2px var(--primary) solid;
 }
 .circle-side-bar{

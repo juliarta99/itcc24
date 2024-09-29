@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../lib/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="../lib/swiperjs/swiper-bundle.min.css">
 </head>
 <body>
-    <header id="navbar" class="shadow-md bg-white">
+    <header id="navbar" class="shadow-md">
         <nav>
             <div class="logo flex gap-05">
                 <a href="index.html" class="text-primary">
@@ -21,272 +22,297 @@
                 </a>
             </div>
             <div class="wrapper-nav-link">
-                <a href="index.html" class="nav-link">Dashboard</a>
-                <a href="academy.html" class="nav-link">Academy</a>
-                <a href="challange.html" class="nav-link">Challange</a>
-                <a href="event.html" class="nav-link">Event</a>
-                <a href="mentoring.html" class="nav-link">Mentoring</a>
-                <a href="jobs.html" class="nav-link">Job</a>
+                <a href="index.html" data-white="1" class="nav-link text-white">Dashboard</a>
+                <a href="academy.html" data-white="1" class="nav-link text-white">Academy</a>
+                <a href="challange.html" data-white="1" class="nav-link text-white">Challange</a>
+                <a href="event.html" data-white="1" class="nav-link text-white">Event</a>
+                <a href="mentoring.html" data-white="1" class="nav-link text-white">Mentoring</a>
+                <a href="jobs.html" data-white="1" class="nav-link text-white">Job</a>
             </div>
             <div class="account-nav-link">
-                <a href="login.html">
+                <a href="login.html" class="link-to-login">
                     <button class="btn btn-white">Masuk</button>
                 </a>
-                <a href="register.html">
+                <a href="register.html" class="link-to-register">
                     <button class="btn btn-primary">Daftar</button>
                 </a>
             </div>
         </nav>
     </header>
     <div class="container bg-black pt-nav text-white">
-        <h1>Selamat datang Ngurah Juliarta</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, mollitia?</p>
-        <div class="grid-cols-2 gap-1 mt-1 text-black">
-            <div class="card w-full">
-                <div class="flex gap-05 align-center">
-                    <i class='bx bx-code-alt'></i>
-                    <h4>Aktivitas Belajar</h4>
-                </div>
-                <div class="mt-1 flex flex-column gap-05">
-                    <div class="card w-full bg-primary border-sm flex gap-1 p-1 text-white">
-                        <div class="">
-                            <h5>Sedang dipelajari</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
-                        </div>
-                        <button class="btn btn-white h-max m-auto">Lanjutkan</button>
+        <div class="circle-absolute circle-tersier z-1"></div>
+        <div class="z-2 position-relative mw">
+            <h1>Selamat datang Ngurah Juliarta</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, mollitia?</p>
+            <div class="grid-cols-2 gap-1 mt-1 text-black">
+                <div class="card w-full">
+                    <div class="flex gap-05 align-center">
+                        <i class='bx bx-code-alt text-lg'></i>
+                        <h4>Aktivitas Belajar</h4>
                     </div>
-                    <div class="card w-full bg-primary border-sm flex gap-1 p-1 text-white">
-                        <div class="">
-                            <h5>Sedang dipelajari</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
+                    <div class="mt-1 flex flex-column gap-05">
+                        <div class="card activity w-full bg-primary border-sm flex gap-1 p-1 text-white">
+                            <div class="">
+                                <h5>Sedang dipelajari</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
+                            </div>
+                            <button class="btn btn-white h-max m-auto">Lanjutkan</button>
                         </div>
-                        <button class="btn btn-white h-max m-auto">Lanjutkan</button>
-                    </div>
-                    <div class="card w-full bg-primary border-sm flex gap-1 p-1 text-white">
-                        <div class="">
-                            <h5>Sedang dipelajari</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
+                        <div class="card activity w-full bg-primary border-sm flex gap-1 p-1 text-white">
+                            <div class="">
+                                <h5>Sedang dipelajari</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
+                            </div>
+                            <button class="btn btn-white h-max m-auto">Lanjutkan</button>
                         </div>
-                        <button class="btn btn-white h-max m-auto">Lanjutkan</button>
-                    </div>
-                    <div class="card w-full bg-primary border-sm flex gap-1 p-1 text-white">
-                        <div class="">
-                            <h5>Lulus</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
+                        <div class="card activity w-full bg-primary border-sm flex gap-1 p-1 text-white">
+                            <div class="">
+                                <h5>Sedang dipelajari</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
+                            </div>
+                            <button class="btn btn-white h-max m-auto">Lanjutkan</button>
                         </div>
-                        <button class="btn btn-white h-max m-auto">Sertifikat</button>
-                    </div>
-                    <button class="btn btn-white">Lihat Semua</button>
-                </div>
-            </div>
-            <div class="grid-rows-2-max gap-1">
-                <div class="grid-cols-2 gap-1">
-                    <div class="card w-full flex flex-column align-center justify-between">
-                        <div class="flex gap-05 align-center">
-                            <i class='bx bx-calendar-star'></i>
-                            <h4>Status Langganan</h4>
+                        <div class="card activity w-full bg-primary border-sm flex gap-1 p-1 text-white">
+                            <div class="">
+                                <h5>Lulus</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptas?</p>
+                            </div>
+                            <button class="btn btn-white h-max m-auto">Sertifikat</button>
                         </div>
-                        <div class="flex gap-05 align-center mt-1 text-green">
-                            <i class='bx bxs-check-circle'></i>
-                            <h3>Aktif</h3>
-                        </div>
-                        <div class="flex gap-05 align-center text-xs">
-                            <p>s.d</p>
-                            <i class='bx bx-calendar-star'></i>
-                            <p>10 Oktober 2024</p>
-                        </div>
-                        <button class="btn btn-primary">Perpanjang</button>
-                    </div>
-                    <div class="card w-full flex flex-column align-center justify-between">
-                        <div class="flex gap-05 align-center">
-                            <i class='bx bx-list-check'></i>
-                            <h4>Kelas yang diselasikan</h4>
-                        </div>
-                        <h1 class="text-center">30</h1>
-                        <button class="btn btn-primary w-max">Lihat Kelas</button>
+                        <button class="btn btn-white">Lihat Semua</button>
                     </div>
                 </div>
-                <div class="card w-full"></div>
+                <div class="grid-rows-2-max gap-1">
+                    <div class="grid-cols-2 gap-1">
+                        <div class="card w-full flex flex-column align-center justify-between">
+                            <div class="flex gap-05 align-center">
+                                <i class='bx bx-calendar-star text-lg'></i>
+                                <h4 class="text-center">Status Langganan</h4>
+                            </div>
+                            <div class="flex gap-05 align-center mt-1 text-green">
+                                <i class='bx bxs-check-circle'></i>
+                                <h3>Aktif</h3>
+                            </div>
+                            <div class="flex gap-05 align-center text-xs">
+                                <p>s.d</p>
+                                <i class='bx bx-calendar-star'></i>
+                                <p>10 Oktober 2024</p>
+                            </div>
+                            <button class="btn btn-primary mt-05">Perpanjang</button>
+                        </div>
+                        <div class="card w-full flex flex-column align-center justify-between">
+                            <div class="flex gap-05 align-center">
+                                <i class='bx bx-list-check text-lg'></i>
+                                <h4 class="text-center">Kelas yang diselasikan</h4>
+                            </div>
+                            <h1 class="text-center">30</h1>
+                            <button class="btn btn-primary mt-05">Lihat Kelas</button>
+                        </div>
+                    </div>
+                    <div class="card w-full pb-1">
+                        <div class="flex gap-05 align-center justify-center pb-3">
+                            <i class='bx bx-timer text-lg'></i>
+                            <h4 class="text-center">Aktivitas Lama Belajar</h4>
+                        </div>
+                        <div class="chart" id="barChart"></div>    
+                        <div class="label-chart" id="monthLabels"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container bg-gradient">
-        <h1>Rekomendasi Course</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis!</p>
-        <div class="swiper swiper-learnings">
-            <div class="swiper-wrapper">
-                <a href="" class="swiper-slide p-1">
-                    <div class="card-learning-parent">
-                        <div class="card-learning">
-                            <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
-                            <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
-                                <div class="content-card-learning card-bubble">
-                                    <div class="bubble bubble-1"></div>
-                                    <div class="bubble bubble-2"></div>
-                                    <div class="p-1 pt-2 h-full">
-                                        <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
-                                        <div class="flex align-center gap-05 mt-1">
-                                            <i class='bx bxs-star text-highlight'></i>
-                                            <p class="text-xs">4,80</p>
-                                        </div>
-                                        <div class="flex align-center gap-05">
-                                            <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
-                                            <p class="text-xs">Level Dasar</p>
-                                        </div>
-                                        <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-time-five'></i>
-                                            <p class="text-xs">45 Jam</p>
-                                        </div>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-user'></i>
-                                            <p class="text-xs">74.9k Siswa</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="swiper-slide p-1">
-                    <div class="card-learning-parent">
-                        <div class="card-learning">
-                            <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
-                            <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
-                                <div class="content-card-learning card-bubble">
-                                    <div class="bubble bubble-1"></div>
-                                    <div class="bubble bubble-2"></div>
-                                    <div class="p-1 pt-2 h-full">
-                                        <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
-                                        <div class="flex align-center gap-05 mt-1">
-                                            <i class='bx bxs-star text-highlight'></i>
-                                            <p class="text-xs">4,80</p>
-                                        </div>
-                                        <div class="flex align-center gap-05">
-                                            <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
-                                            <p class="text-xs">Level Dasar</p>
-                                        </div>
-                                        <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-time-five'></i>
-                                            <p class="text-xs">45 Jam</p>
-                                        </div>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-user'></i>
-                                            <p class="text-xs">74.9k Siswa</p>
+        <div class="mw">
+            <h1>Rekomendasi Course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis!</p>
+            <div class="swiper swiper-learnings">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide p-1">
+                        <div class="card-learning-parent">
+                            <div class="card-learning">
+                                <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                                <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                                    <div class="content-card-learning card-bubble">
+                                        <div class="bubble bubble-1"></div>
+                                        <div class="bubble bubble-2"></div>
+                                        <div class="p-1 pt-2 h-full">
+                                            <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                            <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-time-five'></i>
+                                                <p class="text-xs">45 Jam</p>
+                                            </div>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-user'></i>
+                                                <p class="text-xs">74.9k Siswa</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="" class="swiper-slide p-1">
-                    <div class="card-learning-parent">
-                        <div class="card-learning">
-                            <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
-                            <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
-                                <div class="content-card-learning card-bubble">
-                                    <div class="bubble bubble-1"></div>
-                                    <div class="bubble bubble-2"></div>
-                                    <div class="p-1 pt-2 h-full">
-                                        <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
-                                        <div class="flex align-center gap-05 mt-1">
-                                            <i class='bx bxs-star text-highlight'></i>
-                                            <p class="text-xs">4,80</p>
-                                        </div>
-                                        <div class="flex align-center gap-05">
-                                            <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
-                                            <p class="text-xs">Level Dasar</p>
-                                        </div>
-                                        <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-time-five'></i>
-                                            <p class="text-xs">45 Jam</p>
-                                        </div>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-user'></i>
-                                            <p class="text-xs">74.9k Siswa</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="swiper-slide p-1">
-                    <div class="card-learning-parent">
-                        <div class="card-learning">
-                            <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
-                            <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
-                                <div class="content-card-learning card-bubble">
-                                    <div class="bubble bubble-1"></div>
-                                    <div class="bubble bubble-2"></div>
-                                    <div class="p-1 pt-2 h-full">
-                                        <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
-                                        <div class="flex align-center gap-05 mt-1">
-                                            <i class='bx bxs-star text-highlight'></i>
-                                            <p class="text-xs">4,80</p>
-                                        </div>
-                                        <div class="flex align-center gap-05">
-                                            <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
-                                            <p class="text-xs">Level Dasar</p>
-                                        </div>
-                                        <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-time-five'></i>
-                                            <p class="text-xs">45 Jam</p>
-                                        </div>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-user'></i>
-                                            <p class="text-xs">74.9k Siswa</p>
+                    </a>
+                    <a href="" class="swiper-slide p-1">
+                        <div class="card-learning-parent">
+                            <div class="card-learning">
+                                <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                                <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                                    <div class="content-card-learning card-bubble">
+                                        <div class="bubble bubble-1"></div>
+                                        <div class="bubble bubble-2"></div>
+                                        <div class="p-1 pt-2 h-full">
+                                            <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                            <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-time-five'></i>
+                                                <p class="text-xs">45 Jam</p>
+                                            </div>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-user'></i>
+                                                <p class="text-xs">74.9k Siswa</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="" class="swiper-slide p-1">
-                    <div class="card-learning-parent">
-                        <div class="card-learning">
-                            <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
-                            <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
-                                <div class="content-card-learning card-bubble">
-                                    <div class="bubble bubble-1"></div>
-                                    <div class="bubble bubble-2"></div>
-                                    <div class="p-1 pt-2 h-full">
-                                        <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
-                                        <div class="flex align-center gap-05 mt-1">
-                                            <i class='bx bxs-star text-highlight'></i>
-                                            <p class="text-xs">4,80</p>
-                                        </div>
-                                        <div class="flex align-center gap-05">
-                                            <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
-                                            <p class="text-xs">Level Dasar</p>
-                                        </div>
-                                        <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-time-five'></i>
-                                            <p class="text-xs">45 Jam</p>
-                                        </div>
-                                        <div class="flex align-center gap-05 mt-05">
-                                            <i class='bx bxs-user'></i>
-                                            <p class="text-xs">74.9k Siswa</p>
+                    </a>
+                    <a href="" class="swiper-slide p-1">
+                        <div class="card-learning-parent">
+                            <div class="card-learning">
+                                <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                                <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                                    <div class="content-card-learning card-bubble">
+                                        <div class="bubble bubble-1"></div>
+                                        <div class="bubble bubble-2"></div>
+                                        <div class="p-1 pt-2 h-full">
+                                            <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                            <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-time-five'></i>
+                                                <p class="text-xs">45 Jam</p>
+                                            </div>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-user'></i>
+                                                <p class="text-xs">74.9k Siswa</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    <a href="" class="swiper-slide p-1">
+                        <div class="card-learning-parent">
+                            <div class="card-learning">
+                                <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                                <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                                    <div class="content-card-learning card-bubble">
+                                        <div class="bubble bubble-1"></div>
+                                        <div class="bubble bubble-2"></div>
+                                        <div class="p-1 pt-2 h-full">
+                                            <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                            <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-time-five'></i>
+                                                <p class="text-xs">45 Jam</p>
+                                            </div>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-user'></i>
+                                                <p class="text-xs">74.9k Siswa</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="swiper-slide p-1">
+                        <div class="card-learning-parent">
+                            <div class="card-learning">
+                                <img src="../assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                                <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                                    <div class="content-card-learning card-bubble">
+                                        <div class="bubble bubble-1"></div>
+                                        <div class="bubble bubble-2"></div>
+                                        <div class="p-1 pt-2 h-full">
+                                            <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                            <p class="text-xs mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-time-five'></i>
+                                                <p class="text-xs">45 Jam</p>
+                                            </div>
+                                            <div class="flex align-center gap-05 mt-05">
+                                                <i class='bx bxs-user'></i>
+                                                <p class="text-xs">74.9k Siswa</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        </div>
+        <hr class="mt-15">
+        <div class="container">
+            <div class="gap-1 justify-between flex mw">
+                <p>© 2024 All right and reserved by TechGrow</p>
+                <div class="flex gap-1">
+                    <i class='bx text-lg bxl-instagram-alt'></i>
+                    <i class='bx text-lg bxl-youtube' ></i>
+                    <i class='bx text-lg bxl-twitter' ></i>
+                    <i class='bx text-lg bxl-facebook' ></i>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <script src="../lib/swiperjs/swiper-bundle.min.js"></script>
 <script src="../lib/jquery/jquery-3.7.1.min.js"></script>
+<script src="../js/navbar.js"></script>
 <script src="../js/script.js"></script>
 </html>

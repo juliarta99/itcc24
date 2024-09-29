@@ -30,6 +30,38 @@ $(document).ready(function() {
         $('.humberger').toggleClass('active');
         $('.nav-mobile').toggleClass('show');
     })
+
+    $('#btn-collapse').on('click', function() {
+        const icon = $(this).find('i');
+        if (icon.hasClass('bx-left-arrow-circle')) {
+            icon.removeClass('bx-left-arrow-circle').addClass('bx-right-arrow-circle');
+        } else {
+            icon.removeClass('bx-right-arrow-circle').addClass('bx-left-arrow-circle');
+        }
+        $('#title-side-bar').toggleClass('hidden');
+        $('.name-link-side-bar').toggleClass('hidden');
+        $('.side-bar-link').toggleClass('justify-center');
+
+        if($('#title-side-bar').hasClass('hidden')) {
+            $('#container-dashboard').css('grid-template-columns', `max-content calc(100% - 300px)`);
+            const sidebarWidth = $('#side-bar').outerWidth();
+            $('#container-dashboard').css('grid-template-columns', `max-content calc(100% - ${sidebarWidth}px)`);
+        } else {
+            $('#container-dashboard').css('grid-template-columns', `300px calc(100% - 300px)`);
+        }
+    });  
+    
+    const datasChart = [65, 59, 80, 81, 56, 45, 90];
+    const monthsChart = ['09/09', '10/09', '11/09', '12/09', '13/09', '14/09', '15/09'];
+    $.each(datasChart, function(index, value) {
+        $('#barChart').append('<div class="bar" title="' + monthsChart[index] + ' - ' + value +' menit"><span class="text-xs">' + value + '<br> menit ' + '</span></div>');
+    });
+    $.each(monthsChart, function(index, month) {
+        $('#monthLabels').append('<div class="month-label text-xs">' + month + '</div>');
+    });
+    $('#barChart .bar').each(function(index) {
+        $(this).animate({ height: datasChart[index] * 3 + 'px' }, 1000);
+    });
 });
 var swiper = new Swiper(".swiper-partners", {
     grabCursor: true,
