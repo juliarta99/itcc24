@@ -93,7 +93,7 @@ var swiper = new Swiper(".swiper-partners", {
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true
+        // pauseOnMouseEnter: true
     },
     speed: 3000,
     freeMode: true,
@@ -118,6 +118,7 @@ var swiper = new Swiper(".swiper-partners", {
 var swiper = new Swiper(".swiper-menu", {
     slidesPerView: 1,
     spaceBetween: 0,
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -141,6 +142,7 @@ var swiper = new Swiper(".swiper-menu", {
 var swiper = new Swiper(".swiper-learnings", {
     slidesPerView: 1,
     spaceBetween: 0,
+    loop:true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -169,7 +171,7 @@ var swiper = new Swiper(".swiper-2", {
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true
+        // pauseOnMouseEnter: true
     },
     breakpoints: {
         768: {
@@ -188,15 +190,12 @@ var swiper = new Swiper(".swiper-learnings", {
     breakpoints: {
         640: {
             slidesPerView: 2,
-            loop: false,
         },
         768: {
             slidesPerView: 3,
-            loop: false,
         }, 
         1024: {
             slidesPerView: 4,
-            loop: false,
         }
     }
 });
@@ -224,7 +223,7 @@ var swiper = new Swiper(".swiper-menu-testimoni", {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true
+        // pauseOnMouseEnter: true
     },
     spaceBetween: 30,
     loop: true,
