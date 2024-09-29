@@ -210,8 +210,8 @@ var swiper = new Swiper(".swiper-menu-testimoni", {
 });
 
 var swiper = new Swiper(".swiper-menu-learning", {
-    slidesPerView: 1,
     spaceBetween: 10,
+    freeMode: true,
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",

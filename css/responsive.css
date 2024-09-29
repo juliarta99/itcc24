@@ -8,9 +8,6 @@
     .grid-cols-2{
         grid-template-columns: 1fr !important;
     }
-    .card-bubble-wrapper{
-        margin-top: 1rem;
-    }
 }
 @media (max-width: 960px) {
     nav{
@@ -58,11 +55,14 @@
     }
 }
 @media (max-width: 640px) {
+    .swiper-button-mini{
+        display: none !important;
+    }
     .landing{
         margin-bottom: 3rem;
     }
     .container{
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem;
     }
     .card{
         padding: 1.5rem;
@@ -163,6 +163,9 @@
     }
     .profil-testimoni img{
         max-width: 100%;
+    }
+    .container-swiper-menu-learnings .swiper .swiper-wrapper .swiper-slide {
+        padding: 0 !important;
     }
     .swiper-slide{
         padding: 1rem;
