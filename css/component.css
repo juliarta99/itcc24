@@ -642,6 +642,15 @@ input[type="radio"].radio-find:checked + label, input[type="radio"].radio-find:h
 .image-find img{
     width: 80%;
 }
+.image-profile{
+    max-width: 200px;
+}
+.image-profile img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 /* position */
 .position-relative{

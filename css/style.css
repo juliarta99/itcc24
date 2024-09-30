@@ -614,3 +614,9 @@ nav > div:last-child{
     max-width: 15%;
     width: 100%;
 }
+
+.nav-cv-profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: .5rem;
+}

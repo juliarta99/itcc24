@@ -90,6 +90,9 @@
     .text-2xl{
         font-size: 2.2rem;
     }
+    .nav-cv-profile{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media (max-width: 640px) {
     .grid-cols-3{
@@ -296,5 +299,11 @@
     }
     .swiper-button-next::after, .swiper-button-prev::after{
         color: var(--primary);
+    }
+    .image-profile{
+        max-width: 150px;
+    }
+    .nav-cv-profile{
+        grid-template-columns: 1fr 1fr;
     }
 }
