@@ -68,6 +68,28 @@
     top: 5px;
     right: 10px;
 }
+.btn-step-find{
+    width: 50px;
+    height: 50px;
+    padding: .5rem;
+    color: var(--primary);
+    font-weight: bold;
+    border: 1px var(--primary) solid;
+    transition: all .5s ease;
+}
+.btn-step-find.active, .btn-step-find:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn-step-find.done{
+    background-color: var(--primary);
+    color: var(--primary);
+}
+.kembali-find{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
 
 /* background */
 .bg-primary{
@@ -80,7 +102,7 @@
     background-color: var(--tersier);
 }
 .bg-highlight{
-    background-color: var(--highlight);
+    background-color: var(--highlight) !important;
 }
 .bg-white{
     background-color: var(--white);
@@ -217,6 +239,9 @@
 }
 .pb-13{
     padding-bottom: 13rem !important;
+}
+.p-0{
+    padding: 0 !important;
 }
 .p-1{
     padding: 1rem;
@@ -401,6 +426,22 @@
 .input-search:focus, .input-search-dashboard:focus{
     outline: none;
 }
+input[type="radio"].radio-find{
+    display: none;
+}
+input[type="radio"].radio-find + label{
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+input[type="radio"].radio-find:checked + label, input[type="radio"].radio-find:hover + label{
+    background-color: var(--primary);
+    color: var(--white);
+}
 /* form */
 .form-auth{
     max-width: 500px;
@@ -505,6 +546,31 @@
     gap: .5rem;
     overflow: hidden;
 }
+.card-in-design::after{
+    content: '';
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-color: var(--primary);
+    box-shadow: 0 10px 75px -1px rgba(129, 76, 245, .5);
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    z-index: -1;
+    border-radius: 2rem 0 0 0;
+}
+.card-in-design::before{
+    content: '';
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-color: var(--primary);
+    box-shadow: 0 10px 75px -1px rgba(129, 76, 245, .5);
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    z-index: -1;
+    border-radius: 0 0 2rem 0;
+}
+
 .cols-3 a{
     display: block;
 }
@@ -566,6 +632,15 @@
 /* image */
 .img-md{
     width: 100px;
+}
+.image-find{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.image-find img{
+    width: 80%;
 }
 
 /* position */
@@ -711,6 +786,9 @@
     background-color: var(--primary);
     color: var(--white);
     border: 1px solid var(--primary);
+}
+.active-menu{
+    color: var(--primary);
 }
 
 @keyframes right-left {

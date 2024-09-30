@@ -15,69 +15,108 @@
 </head>
 <body>
     <div class="bg-gradient container min-h-100 flex align-center justify-center">
-        <div class="card w-full mw">
+        <div class="card card-in-design w-full mw position-relative">
             <h1 class="text-center">Temukan apa yang tepat untuk anda</h1>
             <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, totam?</p>
             <div class="grid-cols-2 mt-15 gap-1">
                 <div class="flex justify-between flex-column">
                     <div id="question-1">
                         <h3>Apa yang ingin Anda Pelajari?</h3>
-                        <div class="grid-cols-2 gap-05">
-                            <div class="card w-full">
-                                <p class="text-center">Back-End</p>
-                            </div>
-                            <div class="card w-full">
-                                <p class="text-center">Web Development</p>
-                            </div>
-                            <div class="card w-full">
+                        <div class="grid-cols-2 gap-05 mt-1">
+                            <input type="radio" id="back-end" class="radio-find" name="ingin-dipelajari">
+                            <label for="back-end" class="card w-full">
+                                <p class="text-center">Back-End Developer</p>
+                            </label>
+                            <input type="radio" id="front-end" class="radio-find" name="ingin-dipelajari">
+                            <label for="front-end" class="card w-full">
+                                <p class="text-center">Front-End Developer</p>
+                            </label>
+                            <input type="radio" id="web-design" class="radio-find" name="ingin-dipelajari">
+                            <label for="web-design" class="card w-full">
                                 <p class="text-center">Web Design</p>
-                            </div>
-                            <div class="card w-full">
+                            </label>
+                            <input type="radio" id="data-science" class="radio-find" name="ingin-dipelajari">
+                            <label for="data-science" class="card w-full">
                                 <p class="text-center">Data Science</p>
-                            </div>
+                            </label>
+                            <input type="radio" id="machine-learning" class="radio-find" name="ingin-dipelajari">
+                            <label for="machine-learning" class="card w-full">
+                                <p class="text-center">Machine Learning</p>
+                            </label>
+                            <input type="radio" id="android-dev" class="radio-find" name="ingin-dipelajari">
+                            <label for="android-dev" class="card w-full">
+                                <p class="text-center">Android Developer</p>
+                            </label>
+                            <input type="radio" id="ai" class="radio-find" name="ingin-dipelajari">
+                            <label for="ai" class="card w-full">
+                                <p class="text-center">Artificial Intelligence</p>
+                            </label>
+                            <input type="radio" id="not" class="radio-find" name="ingin-dipelajari">
+                            <label for="not" class="card w-full">
+                                <p class="text-center">Belum yakin</p>
+                            </label>
                         </div>
                     </div>
                     <div id="question-2" class="hidden">
-                        <h3>Apa yang ingin Anda Pelajari?</h3>
+                        <h3>Apa yang ingin Anda capai?</h3>
+                        <button class="text-primary kembali-find mt-1" data-target="#question-1">Kembali</button>
                         <div class="grid-cols-2 gap-05">
-                            <div class="card w-full">
-                                <p class="text-center">Back-End</p>
-                            </div>
-                            <div class="card w-full">
-                                <p class="text-center">Web Development</p>
-                            </div>
-                            <div class="card w-full">
-                                <p class="text-center">Web Design</p>
-                            </div>
-                            <div class="card w-full">
-                                <p class="text-center">Data Science</p>
-                            </div>
+                            <input type="radio" id="beralih" class="radio-find" name="ingin-dicapai">
+                            <label for="beralih" class="card w-full">
+                                <p class="text-center">Beralih karir</p>
+                            </label>
+                            <input type="radio" id="work" class="radio-find" name="ingin-dicapai">
+                            <label for="work" class="card w-full">
+                                <p class="text-center">Pelajari untuk pekerjaan</p>
+                            </label>
+                            <input type="radio" id="project" class="radio-find" name="ingin-dicapai">
+                            <label for="project" class="card w-full">
+                                <p class="text-center">Membangun proyek</p>
+                            </label>
+                            <input type="radio" id="school" class="radio-find" name="ingin-dicapai">
+                            <label for="school" class="card w-full">
+                                <p class="text-center">Belajar untuk sekolah</p>
+                            </label>
+                            <input type="radio" id="happy" class="radio-find" name="ingin-dicapai">
+                            <label for="happy" class="card w-full">
+                                <p class="text-center">Belajar untuk bersenang-senang</p>
+                            </label>
+                            <input type="radio" id="not-2" class="radio-find" name="ingin-dicapai">
+                            <label for="not-2" class="card w-full">
+                                <p class="text-center">Belum yakin</p>
+                            </label>
                         </div>
                     </div>
                     <div id="question-3" class="hidden">
-                        <h3>Apa yang ingin Anda Pelajari?</h3>
-                        <div class="grid-cols-2 gap-05">
-                            <div class="card w-full">
-                                <p class="text-center">Back-End</p>
-                            </div>
-                            <div class="card w-full">
-                                <p class="text-center">Web Development</p>
-                            </div>
-                            <div class="card w-full">
-                                <p class="text-center">Web Design</p>
-                            </div>
-                            <div class="card w-full">
-                                <p class="text-center">Data Science</p>
-                            </div>
+                        <h3>Berapa banyak pengalaman yang Anda miliki dibidang itu?</h3>
+                        <button class="text-primary kembali-find mt-1" data-target="#question-2">Kembali</button>
+                        <div class="flex flex-column gap-05">
+                            <input type="radio" id="beginner" class="radio-find" name="pengalaman">
+                            <label for="beginner" class="card w-full">
+                                <h4 class="text-center">Beginner</h4>
+                                <p class="text-center">Tidak pernah membuat kode, atau hanya mengetahui dasar-dasarnya</p>
+                            </label>
+                            <input type="radio" id="intermediate" class="radio-find" name="pengalaman">
+                            <label for="intermediate" class="card w-full">
+                                <h4 class="text-center">Intermediate</h4>
+                                <p class="text-center">Telah membuat beberapa proyek</p>
+                            </label>
+                            <input type="radio" id="advanced" class="radio-find" name="pengalaman">
+                            <label for="advanced" class="card w-full">
+                                <h4 class="text-center">Advanced</h4>
+                                <p class="text-center">Memiliki pengalaman profesional</p>
+                            </label>
                         </div>
                     </div>
-                    <div class="flex align-center justify-center gap-1">
-                        <button class="btn btn-step-find">1</button>
-                        <button class="btn btn-step-find">2</button>
-                        <button class="btn btn-step-find">3</button>
+                    <div class="flex align-center justify-center gap-1 mt-1">
+                        <button class="btn btn-step-find active" data-target="#question-1">1</button>
+                        <button class="btn btn-step-find" data-target="#question-2">2</button>
+                        <button class="btn btn-step-find" data-target="#question-3">3</button>
                     </div>
                 </div>
-                <div class="bg-white"></div>
+                <div class="image-find">
+                    <img src="assets/img-find.svg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -85,6 +124,5 @@
 <script src="lib/swiperjs/swiper-bundle.min.js"></script>
 <script src="lib/jquery/jquery-3.7.1.min.js"></script>
 <script src="lib/typedJS/dist/typed.umd.js"></script>
-<script src="js/typed.js"></script>
 <script src="js/script.js"></script>
 </html>

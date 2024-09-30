@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../lib/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="../lib/swiperjs/swiper-bundle.min.css">
+</head>
+<body>
+    <header id="navbar" class="shadow-md">
+        <nav>
+            <div class="logo flex gap-05">
+                <a href="../index.html" class="text-primary">
+                    <h1>Tech</h1>
+                </a>
+            </div>
+            <div class="wrapper-nav-link">
+                <a href="index.html" data-white="1" class="nav-link text-white">Dashboard</a>
+                <a href="academy.html" data-white="1" class="nav-link text-white">Academy</a>
+                <a href="challange.html" data-white="1" class="nav-link text-white">Challange</a>
+                <a href="event.html" data-white="1" class="nav-link text-white">Event</a>
+                <a href="mentoring.html" data-white="1" class="nav-link text-white">Mentoring</a>
+                <a href="jobs.html" data-white="1" class="nav-link text-white">Job</a>
+            </div>
+            <div class="account-nav-link">
+                <div class="flex gap-05 align-center text-primary cursor-pointer" id="toggle-profile">
+                    <img src="../assets/john-doe.jpg" class="profile-img" alt="">
+                    <i class='bx bx-chevron-down text-lg' id="icon-toggle-profile"></i>
+                </div>
+                <div class="humberger" id="humberger">
+                    <span class="bg-white-important" data-white="1"></span>
+                    <span class="bg-white-important" data-white="1"></span>
+                    <span class="bg-white-important" data-white="1"></span>
+                </div>
+                <div class="wrapper-menu-account" id="menu-account">
+                    <a href="profile.html" class="menu-account">
+                        <i class="bx bx-user"></i>
+                        <p>Profil</p>
+                    </a>
+                    <a href="index.html" class="menu-account logout">
+                        <i class='bx bx-log-out'></i>
+                        <p>Keluar</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-mobile min-h-100">
+        <div class="nav-mobile-wrapper">
+            <div class="flex justify-between align-center gap-1">
+                <h1>Tech</h1>
+                <div class="humberger" id="humberger-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="container flex flex-column gap-1">
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-shape-circle'></i>
+                    <a href="index.html">Dashboard</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="academy.html">Academy</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="challange.html">Challange</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="event.html">Event</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="mentoring.html">Mentoring</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="jobs.html">Job</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-black pt-nav text-white">
+        
+    </div>
+</body>
+<script src="../lib/swiperjs/swiper-bundle.min.js"></script>
+<script src="../lib/jquery/jquery-3.7.1.min.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/script.js"></script>
+</html>

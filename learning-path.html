@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="wrapper-nav-link">
-                <a href="learning-path.html" class="nav-link">Learning Path</a>
+                <a href="learning-path.html" class="nav-link active">Learning Path</a>
                 <a href="langganan.html" class="nav-link">Langganan</a>
                 <a href="" class="nav-link">Lainnya</a>
             </div>
@@ -49,10 +49,30 @@
         <hr>
         <div class="container-swiper-menu-learnings mw">
             <div class="swiper swiper-menu-learning">
-                <div class="swiper-wrapper p-05">
+                <div class="swiper-wrapper p-05 align-center">
                   <div class="swiper-slide text-center">
-                    <a href="" class="text-center active">
-                        Android Developer
+                    <a href="" class="text-center active-menu">
+                        Back-End Dev
+                    </a>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <a href="" class="text-center">
+                        Front-End Dev
+                    </a>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <a href="" class="text-center">
+                        Machine Learning
+                    </a>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <a href="" class="text-center">
+                        UI & UX Design
+                    </a>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <a href="" class="text-center">
+                        Data Science
                     </a>
                   </div>
                   <div class="swiper-slide text-center">
@@ -62,32 +82,12 @@
                   </div>
                   <div class="swiper-slide text-center">
                     <a href="" class="text-center">
-                        Android Developer
+                        IOS Developer
                     </a>
                   </div>
                   <div class="swiper-slide text-center">
                     <a href="" class="text-center">
-                        Android Developer
-                    </a>
-                  </div>
-                  <div class="swiper-slide text-center">
-                    <a href="" class="text-center">
-                        Android Developer
-                    </a>
-                  </div>
-                  <div class="swiper-slide text-center">
-                    <a href="" class="text-center">
-                        Android Developer
-                    </a>
-                  </div>
-                  <div class="swiper-slide text-center">
-                    <a href="" class="text-center">
-                        Android Developer
-                    </a>
-                  </div>
-                  <div class="swiper-slide text-center">
-                    <a href="" class="text-center">
-                        Android Developer
+                        Game Developer
                     </a>
                   </div>
                 </div>
@@ -101,40 +101,40 @@
     </header>
     <div class="nav-mobile min-h-100">
         <div class="nav-mobile-wrapper">
-            <div class="flex justify-between align-center">
+            <div class="flex justify-between align-center bg-gradient gap-1">
                 <div class="flex">
-                    <input type="text" class="input input-search" id="search-top" placeholder="Apa yang ingin anda pelajari?">
+                    <input type="text" class="input input-search" placeholder="Apa yang ingin anda pelajari?">
                     <button class="btn btn-primary btn-search w-max">
                         <i class='bx text-lg bx-search'></i>
                     </button>
                 </div>
-                <div class="humberger" id="humberger">
+                <div class="humberger" id="humberger-mobile">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div class="flex flex-column gap-1 justify-center align-center">
-                <div class="flex gap-1 align-center justify-center">
-                    <a href="login.html">
-                        <button class="btn btn-white">Masuk</button>
-                    </a>
-                    <a href="register.html">
-                        <button class="btn btn-primary">Daftar</button>
-                    </a>
+            <div class="container flex flex-column gap-1">
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-shape-circle'></i>
+                    <a href="learning-path.html">Learning Path</a>
                 </div>
-                <div class="card-mini">
-                    <a href="learning-path.html" class="nav-link">Learning Path</a>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="langganan.html">Langganan</a>
                 </div>
-                <div class="card-mini">
-                    <a href="langganan.html" class="nav-link">Langganan</a>
-                </div>
+                <a href="login.html" class="mt-05">
+                    <button class="btn w-full btn-white">Masuk</button>
+                </a>
+                <a href="register.html">
+                    <button class="btn w-full btn-primary">Daftar</button>
+                </a>
             </div>
         </div>
     </div>
     <div class="container title-learning bg-gradient">
-        <h2 class="text-center">Android Developer</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, enim!</p>
+        <h2 class="text-center">Back-End Developer</h2>
+        <p class="text-center">Kurikulum ini dirancang oleh TechGrow bekerja sama dengan AWS serta para ahli industri Back-End Development</p>
         <div class="circle-b-absolute"></div>
         <div class="circle-b-absolute circle-b-1"></div>
     </div>
@@ -142,8 +142,248 @@
         <div class="grid-cols-4">
             <a href="detail.html" class="swiper-slide p-1">
                 <div class="card-learning-parent">
-                    <div class="card-learning shadow-md">
-                        <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                    <div class="card-learning">
+                        <img src="assets/learning-path/course-1.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <div class="front-content-learning">
+                                        <h3 class="text-md">Belajar Dasar AWS Cloud</h3>
+                                        <div class="">
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning">
+                        <img src="assets/learning-path/course-2.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <div class="front-content-learning">
+                                        <h3 class="text-md">Belajar Dasar Pemrograman Javascript</h3>
+                                        <div class="">
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>2</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning">
+                        <img src="assets/learning-path/course-3.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <div class="front-content-learning">
+                                        <h3 class="text-md">Belajar Membuat Aplikasi Back-End Pemula</h3>
+                                        <div class="">
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>3</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning">
+                        <img src="assets/learning-path/course-4.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <div class="front-content-learning">
+                                        <h3 class="text-md">Membangun Arsitektur Cloud di AWS</h3>
+                                        <div class="">
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>4</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning">
+                        <img src="assets/learning-path/course-5.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <div class="front-content-learning">
+                                        <h3 class="text-md">Menjadi Node.js Application Developer</h3>
+                                        <div class="">
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>5</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning">
+                        <img src="assets/learning-path/course-6.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <div class="front-content-learning">
+                                        <h3 class="text-md">Belajar Fundamental Aplikasi Back-End</h3>
+                                        <div class="">
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>6</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html" class="swiper-slide p-1"> 
+                <div class="card-learning-parent">
+                    <div class="card-learning">
+                        <img src="assets/learning-path/course-7.jpg" class="w-full img-learning" alt="">
                         <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
                             <div class="content-card-learning card-bubble">
                                 <div class="bubble bubble-1"></div>
@@ -174,13 +414,13 @@
                                 </div>
                             </div>
                             <div class="icon">
-                                <h4>1</h4>
+                                <h4>7</h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="" class="swiper-slide p-1">
+            <!-- <a href="detail.html" class="swiper-slide p-1">
                 <div class="card-learning-parent">
                     <div class="card-learning shadow-md">
                         <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
@@ -340,9 +580,49 @@
                     </div>
                 </div>
             </a>
+            <a href="" class="swiper-slide p-1">
+                <div class="card-learning-parent">
+                    <div class="card-learning shadow-md">
+                        <img src="assets/back-end-1.jpg" class="w-full img-learning" alt="">
+                        <div class="overlay-card-learning glassmorphism card-bubble-wrapper">
+                            <div class="content-card-learning card-bubble">
+                                <div class="bubble bubble-1"></div>
+                                <div class="bubble bubble-2"></div>
+                                <div class="p-1 pt-2 h-full">
+                                    <div class="front-content-learning">
+                                        <h3 class="text-md">Menjadi Back-End Developer Expert</h3>
+                                        <div class="">
+                                            <div class="flex align-center gap-05 mt-1">
+                                                <i class='bx bxs-star text-highlight'></i>
+                                                <p class="text-xs">4,80</p>
+                                            </div>
+                                            <div class="flex align-center gap-05">
+                                                <i class='bx bxs-bar-chart-alt-2 text-primary'></i>
+                                                <p class="text-xs">Level Dasar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, enim.</p>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-time-five'></i>
+                                        <p class="text-xs">45 Jam</p>
+                                    </div>
+                                    <div class="flex align-center gap-05 mt-05">
+                                        <i class='bx bxs-user'></i>
+                                        <p class="text-xs">74.9k Siswa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a> -->
         </div>
         <div class="flex flex-column align-center mt-15">
-            <h2 class="text-center">Mulailah Langkahmu untuk menjadi Android Developer</h2>
+            <h2 class="text-center">Mulailah Langkahmu untuk menjadi Back-End Developer</h2>
             <button class="btn btn-primary">Mulai Belajar</button>
         </div>
     </div>

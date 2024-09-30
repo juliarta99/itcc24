@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../lib/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="../lib/swiperjs/swiper-bundle.min.css">
 </head>
@@ -16,8 +17,8 @@
     <header id="navbar" class="shadow-md bg-white">
         <nav>
             <div class="logo flex gap-05">
-                <a href="index.html" class="text-primary">
-                    <h1>Tech Grow</h1>
+                <a href="../index.html" class="text-primary">
+                    <h1>Tech</h1>
                 </a>
             </div>
             <div class="wrapper-nav-link">
@@ -29,43 +30,272 @@
                 <a href="jobs.html" class="nav-link">Job</a>
             </div>
             <div class="account-nav-link">
-                <a href="login.html">
-                    <button class="btn btn-white">Masuk</button>
-                </a>
-                <a href="register.html">
-                    <button class="btn btn-primary">Daftar</button>
-                </a>
+                <div class="flex gap-05 align-center text-primary cursor-pointer" id="toggle-profile">
+                    <img src="../assets/john-doe.jpg" class="profile-img" alt="">
+                    <i class='bx bx-chevron-down text-lg' id="icon-toggle-profile"></i>
+                </div>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="wrapper-menu-account" id="menu-account">
+                    <a href="profile.html" class="menu-account">
+                        <i class="bx bx-user"></i>
+                        <p>Profil</p>
+                    </a>
+                    <a href="index.html" class="menu-account logout">
+                        <i class='bx bx-log-out'></i>
+                        <p>Keluar</p>
+                    </a>
+                </div>
             </div>
         </nav>
+        <div class="trigger-side-bar">
+            <hr>
+            <div class="nav-mobile-trigger-side-bar">
+                <div class="humberger-dashboard">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p id="title-has-page-dashboard">Semua Job</p>
+            </div>
+        </div>
     </header>
-    <div class="grid-cols-2-max">
+    <div class="nav-mobile min-h-100">
+        <div class="nav-mobile-wrapper">
+            <div class="flex justify-between align-center gap-1">
+                <h1>Tech</h1>
+                <div class="humberger" id="humberger-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="container flex flex-column gap-1">
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-shape-circle'></i>
+                    <a href="index.html">Dashboard</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="academy.html">Academy</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="challange.html">Challange</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="event.html">Event</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="mentoring.html">Mentoring</a>
+                </div>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="jobs.html">Job</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-cols-2-max" id="container-dashboard">
         <section id="side-bar" class="pt-5 bg-white overflow-hidden shadow-md">
             <div class="position-relative p-3 overflow-hidden">
-                <h1 class="text-center z-1">Job</h1>
+                <button class="btn btn-collapse" id="btn-collapse">
+                    <i class='bx bx-left-arrow-circle text-lg'></i>
+                </button>
+                <div class="humberger-dashboard btn-close">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="text-center z-1" id="title-side-bar">Job</h1>
                 <div class="circle-b-absolute circle-side-bar"></div>
                 <div class="circle-b-absolute circle-side-bar-1"></div>
             </div>
             <div class="flex flex-column z-1">
-                <div class="flex gap-1 align-center side-bar-link active">
+                <div data-target="#content-dashboard-1" class="cursor-pointer flex gap-1 align-center side-bar-link active">
                     <i class='bx bx-notepad'></i>
-                    <p>Rekomendasi Job</p>
+                    <p class="name-link-side-bar">Semua Job</p>
                 </div>
-                <div class="flex gap-1 align-center side-bar-link">
+                <div data-target="#content-dashboard-2" class="cursor-pointer flex gap-1 align-center side-bar-link">
                     <i class='bx bx-file' ></i>
-                    <p>Job yang tersedia</p>
-                </div>
-                <div class="flex gap-1 align-center side-bar-link">
-                    <i class='bx bx-file' ></i>
-                    <p>Job yang pernah diikuti</p>
-                </div>
-                <div class="flex gap-1 align-center side-bar-link">
-                    <i class='bx bx-file' ></i>
-                    <p>Riwayat Pengajuan</p>
+                    <p class="name-link-side-bar">Riwayat Job</p>
                 </div>
             </div>
         </section>
-        <div id="all-jobs">
-
+        <div id="content-dashboard-1">
+            <div class="container pt-nav-dashboard bg-gradient min-h-100">
+                <div class="mw">
+                    <h2>Cari Job</h2>
+                    <p>Temukan peluang karier impianmu dengan menjelajahi berbagai pekerjaan yang tersedia</p>
+                    <div class="flex w-full mt-1">
+                        <input type="text" class="input w-full input-search-dashboard" placeholder="Cari pekerjaan">
+                        <button class="btn btn-primary btn-search w-max">
+                            <i class='bx text-lg bx-search'></i>
+                        </button>
+                    </div>
+                    <div class="grid-cols-3 mt-15 gap-1">
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <div class="flex flex-column gap-05 mt-1">
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-buildings'></i>
+                                        <p class="text-sm">Pt Sejahtera Makmur</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-code-alt'></i>
+                                        <p class="text-sm">Back End Developer</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-timer' ></i>
+                                        <p class="text-sm">5 Tahun pengalaman</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-white">About</button>
+                                    <button class="btn btn-primary">Lamar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <div class="flex flex-column gap-05 mt-1">
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-buildings'></i>
+                                        <p class="text-sm">Pt Sejahtera Makmur</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-code-alt'></i>
+                                        <p class="text-sm">Back End Developer</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-timer' ></i>
+                                        <p class="text-sm">5 Tahun pengalaman</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-white">About</button>
+                                    <button class="btn btn-primary">Lamar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <img src="../assets/kenapa-1.png" class="w-full" alt="">
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <div class="flex flex-column gap-05 mt-1">
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-buildings'></i>
+                                        <p class="text-sm">Pt Sejahtera Makmur</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-code-alt'></i>
+                                        <p class="text-sm">Back End Developer</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-timer' ></i>
+                                        <p class="text-sm">5 Tahun pengalaman</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-white">About</button>
+                                    <button class="btn btn-primary">Lamar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-dashboard-2" class="hidden">
+            <div class="container pt-nav-dashboard bg-gradient min-h-100">
+                <div class="mw">
+                    <h2>Riwayat Job</h2>
+                    <p>Pantau perkembangan pekerjaanmu dan periksa setiap update terbaru</p>
+                    <div class="flex w-full mt-1">
+                        <input type="text" class="input w-full input-search-dashboard" placeholder="Cari pekerjaan">
+                        <button class="btn btn-primary btn-search w-max">
+                            <i class='bx text-lg bx-search'></i>
+                        </button>
+                    </div>
+                    <div class="grid-cols-3 mt-15 gap-1">
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-highlight text-white">
+                                <p>Pengajuan</p>
+                            </div>
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <div class="flex flex-column gap-05 mt-1">
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-time'></i>
+                                        <p class="text-sm">29 September 2024, 13:00</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-timer'></i>
+                                        <p class="text-sm">2 jam</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-white">Detail Job</button>
+                                    <button class="btn btn-primary">Lihat Pengajuan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-highlight text-white">
+                                <p>Pengajuan</p>
+                            </div>
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <div class="flex flex-column gap-05 mt-1">
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-time'></i>
+                                        <p class="text-sm">29 September 2024, 13:00</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-timer'></i>
+                                        <p class="text-sm">2 jam</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-white">Detail Job</button>
+                                    <button class="btn btn-primary">Lihat Pengajuan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-full p-0 border-sm overflow-hidden">
+                            <div class="p-1 bg-primary text-white">
+                                <p>Selesai</p>
+                            </div>
+                            <div class="p-1">
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <div class="flex flex-column gap-05 mt-1">
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-time'></i>
+                                        <p class="text-sm">29 September 2024, 13:00</p>
+                                    </div>
+                                    <div class="flex gap-05 align-center">
+                                        <i class='bx text-lg bx-timer'></i>
+                                        <p class="text-sm">2 jam</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column gap-05 justify-center mt-1">
+                                    <button class="btn btn-white">Detail Job</button>
+                                    <button class="btn btn-primary">Hasil Perkerjaan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -28,15 +28,15 @@
                 </div>
             </div>
             <div class="wrapper-nav-link">
-                <a href="learning-path.html" data-white="1" class="text-white nav-link">Learning Path</a>
-                <a href="langganan.html" data-white="1" class="text-white nav-link">Langganan</a>
-                <a href="" data-white="1" class="text-white nav-link">Lainnya</a>
+                <a href="learning-path.html" class="nav-link text-white" data-white="1">Learning Path</a>
+                <a href="langganan.html" class="nav-link text-white active" data-white="1">Langganan</a>
+                <a href="" class="nav-link text-white" data-white="1">Lainnya</a>
             </div>
             <div class="account-nav-link">
                 <div class="humberger" id="humberger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="bg-white-important" data-white="1"></span>
+                    <span class="bg-white-important" data-white="1"></span>
+                    <span class="bg-white-important" data-white="1"></span>
                 </div>
                 <a href="login.html" class="link-to-login">
                     <button class="btn btn-white" id="btn-login">Masuk</button>
@@ -49,44 +49,44 @@
     </header>
     <div class="nav-mobile min-h-100">
         <div class="nav-mobile-wrapper">
-            <div class="flex justify-between align-center">
+            <div class="flex justify-between align-center bg-gradient gap-1">
                 <div class="flex">
-                    <input type="text" class="input input-search" id="search-top" placeholder="Apa yang ingin anda pelajari?">
+                    <input type="text" class="input input-search" placeholder="Apa yang ingin anda pelajari?">
                     <button class="btn btn-primary btn-search w-max">
                         <i class='bx text-lg bx-search'></i>
                     </button>
                 </div>
-                <div class="humberger" id="humberger">
+                <div class="humberger" id="humberger-mobile">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div class="flex flex-column gap-1 justify-center align-center">
-                <div class="flex gap-1 align-center justify-center">
-                    <a href="login.html">
-                        <button class="btn btn-white">Masuk</button>
-                    </a>
-                    <a href="register.html">
-                        <button class="btn btn-primary">Daftar</button>
-                    </a>
+            <div class="container flex flex-column gap-1">
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-shape-circle'></i>
+                    <a href="learning-path.html">Learning Path</a>
                 </div>
-                <div class="card-mini">
-                    <a href="learning-path.html" class="nav-link">Learning Path</a>
+                <div class="flex gap-05 align-center">
+                    <i class='bx bx-money'></i>
+                    <a href="langganan.html">Langganan</a>
                 </div>
-                <div class="card-mini">
-                    <a href="langganan.html" class="nav-link">Langganan</a>
-                </div>
+                <a href="login.html" class="mt-05">
+                    <button class="btn w-full btn-white">Masuk</button>
+                </a>
+                <a href="register.html">
+                    <button class="btn w-full btn-primary">Daftar</button>
+                </a>
             </div>
         </div>
     </div>
     <div class="container pt-nav bg-black text-white pb-13">
         <h1 class="text-center">Biaya & Benefit Langganan</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veritatis.</p>
+        <p class="text-center">Pilih paket berlangganan yang tepat sebagai investasi pembelajaran sesuai kebutuhan Anda</p>
     </div>
     <div class="bg-gradient">
         <div class="content-langganan mw">
-            <div class="px-4 prices grid-cols-4 gap-1">
+            <div class="container prices grid-cols-4 gap-1">
                 <div class="card-price card">
                     <div class="circle-b-absolute circle-b-price"></div>
                     <div class="circle-b-absolute circle-b-price-2"></div>
@@ -132,67 +132,67 @@
                     <button class="btn btn-primary">Pilih Paket</button>
                 </div>
             </div>
-            <div class="px-4 grid-cols-4 gap-05 mt-3">
+            <div class="container grid-cols-4 gap-05 mt-3">
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
                         <i class='bx bxs-dashboard'></i>
                         <h4>Akses Semua Kelas</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p >Akses penuh ke seluruh kelas di Skillera Academy</p>
                 </div>
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
-                        <i class='bx bxs-dashboard'></i>
-                        <h4>Akses Semua Kelas</h4>
+                        <i class='bx bx-chat' ></i>
+                        <h4>Forum Diskusi</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p >Diskusikan materi belajar bersama siswa lainnya</p>
                 </div>
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
-                        <i class='bx bxs-dashboard'></i>
-                        <h4>Akses Semua Kelas</h4>
+                        <i class='bx bx-code-block'></i>
+                        <h4>Code Review</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p>Kode yang dikerjakan akan direview oleh Reviewer berpengalaman</p>
                 </div>
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
-                        <i class='bx bxs-dashboard'></i>
-                        <h4>Akses Semua Kelas</h4>
+                        <i class='bx bx-code'></i>
+                        <h4>Kode Interaktif</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p >Tulis dan jalankan langsung kode anda</p>
                 </div>
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
-                        <i class='bx bxs-dashboard'></i>
-                        <h4>Akses Semua Kelas</h4>
+                        <i class='bx bx-file'></i>
+                        <h4>Ujian</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p >Validasi pengetahuan anda dengan soal-soal ujian</p>
                 </div>
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
-                        <i class='bx bxs-dashboard'></i>
-                        <h4>Akses Semua Kelas</h4>
+                        <i class='bx bx-folder-open'></i>
+                        <h4>Submission</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p >Uji kemampuan teknis anda dengan tugas submission</p>
                 </div>
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
-                        <i class='bx bxs-dashboard'></i>
-                        <h4>Akses Semua Kelas</h4>
+                        <i class='bx bx-certification'></i>
+                        <h4>Sertifikat</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p >Sertifikat kelulusan yang berstandar internasional jika anda menyelesaikan kelas</p>
                 </div>
                 <div class="card w-full">
                     <div class="flex align-center gap-05">
-                        <i class='bx bxs-dashboard'></i>
-                        <h4>Akses Semua Kelas</h4>
+                        <i class='bx bx-edit'></i>
+                        <h4>Perbarui Sertifikat</h4>
                     </div>
-                    <p >Akses penuh ke seluruh kelas di Dicoding Academy.</p>
+                    <p >Perbarui sertifikat anda yang kadarluwarsa</p>
                 </div>
             </div>
         </div>
         <div class="container bg-black text-white border-tl mt-6 flex flex-column gap-05">
-            <h3 class="text-center">Masih belum yakin untuk berlangganan? Silakan coba gratis selama 15 hari dan akses semua kelas di Dicoding Academy.</h3>
+            <h3 class="text-center pt-2">Masih belum yakin untuk berlangganan? Silakan coba gratis selama 15 hari dan akses semua kelas di Dicoding Academy.</h3>
             <button class="btn btn-primary w-max m-auto">Coba Sekarang</button>
         </div>
     </div>

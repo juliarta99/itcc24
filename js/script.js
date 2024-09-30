@@ -45,6 +45,41 @@ $(document).ready(function() {
         $(target).removeClass('hidden');
     }); 
 
+    $('.btn-step-find').click(function() {
+        $('.btn-step-find').removeClass('active');
+        $(this).toggleClass('active');
+        $('[id^="question"]').addClass('hidden');
+        var target = $(this).data('target');
+        $(target).removeClass('hidden');
+    });
+
+    $('.kembali-find').click(function() {
+        $('.btn-step-find.active').prev('.btn-step-find').addClass('active').next('.btn-step-find').removeClass('active');
+        $('[id^="question"]').addClass('hidden');
+        var target = $(this).data('target');
+        $(target).removeClass('hidden');
+    });
+
+    $('input[name="ingin-dipelajari"]').change(function() {
+        if ($(this).is(':checked')) {
+            $('.btn-step-find.active').next('.btn-step-find').addClass('active').prev('.btn-step-find').removeClass('active');
+            $('[id^="question"]').addClass('hidden');
+            $('#question-2').removeClass('hidden');
+        }
+    });
+    $('input[name="ingin-dicapai"]').change(function() {
+        if ($(this).is(':checked')) {
+            $('[id^="question"]').addClass('hidden');
+            $('#question-3').removeClass('hidden');
+            $('.btn-step-find.active').next('.btn-step-find').addClass('active').prev('.btn-step-find').removeClass('active');
+        }
+    });
+    $('input[name="pengalaman"]').change(function() {
+        if ($(this).is(':checked')) {
+            window.location.href = 'dashboard/index.html';
+        }
+    });
+
     $('#toggle-profile').click(function() {
         $('#menu-account').toggleClass('show');
         const icon = $("#icon-toggle-profile");
@@ -235,6 +270,8 @@ var swiper = new Swiper(".swiper-menu-testimoni", {
 });
 
 var swiper = new Swiper(".swiper-menu-learning", {
+    grabCursor: true,
+    slidesPerView: 1,
     spaceBetween: 10,
     freeMode: true,
     loop: true,
