@@ -31,7 +31,7 @@
         grid-template-columns: 100% !important;
     }
     #side-bar{
-        position: absolute;
+        position: fixed;
         transform: translateX(-100%);
         z-index: 98;
         transition: all .5s ease;
@@ -141,6 +141,9 @@
     .btn{
         padding: .6rem 1.5rem;
     }
+    .btn-step-find{
+        padding: .5rem !important;
+    }
     .cols-3{
         -moz-column-count: 2;
         -moz-column-gap: 3%;
@@ -190,6 +193,13 @@
     .grid-cols-4{
         grid-template-columns: 1fr !important;
     }
+    .detail-small-course{
+        flex-direction: column;
+        text-align: center;
+    }
+    .detail-small-course:not(:nth-child(1)) {
+        margin-top: 1rem;
+    }
     .testimoni{
         max-width: 100%;
     }
@@ -226,6 +236,9 @@
     .card-progress-activity{
         justify-content: center;
         flex-direction: column;
+    }
+    .footer-copyright{
+        flex-direction: column-reverse;
     }
 }
 @media (max-width: 500px) {
