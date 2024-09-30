@@ -128,7 +128,6 @@ var swiper = new Swiper(".swiper-partners", {
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
-        // pauseOnMouseEnter: true
     },
     speed: 3000,
     freeMode: true,
@@ -206,7 +205,6 @@ var swiper = new Swiper(".swiper-2", {
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
-        // pauseOnMouseEnter: true
     },
     breakpoints: {
         768: {
@@ -258,7 +256,6 @@ var swiper = new Swiper(".swiper-menu-testimoni", {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
-        // pauseOnMouseEnter: true
     },
     spaceBetween: 30,
     loop: true,
